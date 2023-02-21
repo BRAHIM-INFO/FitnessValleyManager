@@ -1,0 +1,752 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F0037B2A-56EB-431E-BD7D-254B700E0CE9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FitnessValleyManager</RootNamespace>
+    <AssemblyName>FitnessValleyManager</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\Update_MaisonSPA\Update_MaisonSPA\bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="FireSharp, Version=2.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FireSharp.2.0.4\lib\portable-net45+sl5+wp8+win8\FireSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=6.2.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RJCodeAdvance.RJControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\RJCodeAdvance.RJControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Siticone.Desktop.UI, Version=2.0.9.0, Culture=neutral, PublicKeyToken=422d444a8a9fa6db, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Siticone.Desktop.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Siticone.UI, Version=1.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Siticone.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.28.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.28\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.28.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.28\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebCam_Capture, Version=1.0.2395.24959, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WebCam_Capture.dll</HintPath>
+    </Reference>
+    <Reference Include="Zen.Barcode.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b5ae55aa76d2d9de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Zen.Barcode.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\WebCam.cs" />
+    <Compile Include="DAL\DAL_SUBSCRIBER.cs" />
+    <Compile Include="ENTITIES\CLS_SUBSCRIBER.cs" />
+    <Compile Include="FORMS\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\FRM_CAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\FRM_CAM.Designer.cs">
+      <DependentUpon>FRM_CAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\FRM_SUBSCRIBER_ADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\FRM_SUBSCRIBER_ADD.Designer.cs">
+      <DependentUpon>FRM_SUBSCRIBER_ADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\Frm_LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\Frm_LogIn.Designer.cs">
+      <DependentUpon>Frm_LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\Frm_Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\Frm_Loading.Designer.cs">
+      <DependentUpon>Frm_Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_MAINS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_MAINS.Designer.cs">
+      <DependentUpon>FRM_MAINS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\Messages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\Messages.Designer.cs">
+      <DependentUpon>Messages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\Patient.Designer.cs">
+      <DependentUpon>Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FORMS\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\FRM_SUBSCRIBER_ADD.resx">
+      <DependentUpon>FRM_SUBSCRIBER_ADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\Frm_LogIn.resx">
+      <DependentUpon>Frm_LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\Frm_Loading.resx">
+      <DependentUpon>Frm_Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_MAINS.resx">
+      <DependentUpon>FRM_MAINS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\Messages.resx">
+      <DependentUpon>Messages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\Patient.resx">
+      <DependentUpon>Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard %2812%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Teal_Holiday_Winter_Party_Festival_Poster-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\شعار النادي 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5d0643f35b89165111c1db9d_fp-animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6e401ba5143f203bb6752770426a93fd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\580b585b2edbce24c47b2abd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1199.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\117990010_230394788255446_499167077168413901_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\119071510_328401891610466_6763871412875272278_o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\119110993_919489821895392_7005626765267891741_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ABOUT_IBRAHIM - Copie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ABOUT_IBRAHIM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ajax.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back2020.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-dark2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backup_database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB LOGO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BB LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bulleted List_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture4.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture5.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture6.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture7.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture8.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cf258720ded328c92d5a821c78b5a052.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close Window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close Window_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connection Status On_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Console_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomersKPI_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataBinding.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dbplusSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Demo_Security_FullAccess_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Domain_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Down Arrow_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit File_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditContact_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Filled Circle_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Filled Circle_508px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Filled Circle_5031px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_itemSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finger001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group_Statistics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hqdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICN_scan_fp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_cancel_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-accueil-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-list-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-user-male-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ajouter-un-employé-à-la-société-27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ajouter-un-employé-à-la-société-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ajouter-un-groupe-d%27utilisateurs-homme-homme-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ajouter-un-utilisateur-type-de-peau-femme-7-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ajouter-un-utilisateur-type-de-peau-homme-7-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-azure-active-directory-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bâtiment-scolaire-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-budget-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cadenas-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calendar-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cameras-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cdi-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-checklist-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-window-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-conference-48%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-day-camera-filled-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-bin-32%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dossier-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-échec-du-test-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-élèves-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-élèves-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-engrenage-32%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-engrenage-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-famille-homme-femme-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-fingerprint-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-graph-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-groupes-d&amp;#39%3butilisateurs-type-de-peau-7-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-joyent-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-list-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-magazine-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-minimize-window-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-new-post-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-nonya-kueh-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pause-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-play-30%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-play-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-play-button-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-playlist-filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-présentation-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-print-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-renouveler-l%27abonnement-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restore-window-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-school-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-school-director-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-student-male-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-teacher-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-test-partiellement-réussi-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-test-passed-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-transfert-d%27argent-28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image_Spash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-img.jpg.jsf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maximize Window_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu Vertical_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize Window_032px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NEW_32.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noFileIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notification_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Preview_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Preview_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\properties_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quran-icon-png-8822.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quran-icon-png-8823.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quran-icon-png-8824.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s-Accounting_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sans titre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s-Box_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scan-icon-61.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scheduler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s-Combo Chart_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_2020.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_506px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SecurityAndMaintenance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SecurityAndMaintenance_Alert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Server_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings_5030px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shutdown_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\software.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Speedometer_5030px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s-SMS_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s-Statistics_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system_tools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unknown-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Account_5030px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whatsapp-png-image-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zx-e1515337073211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\117990010_230394788255446_499167077168413901_n1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\119071510_328401891610466_6763871412875272278_o1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\119110993_919489821895392_7005626765267891741_n1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11991.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1231.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6e401ba5143f203bb6752770426a93fd1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\شعار_النادي_1-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="REPORTS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_30px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+</Project>
