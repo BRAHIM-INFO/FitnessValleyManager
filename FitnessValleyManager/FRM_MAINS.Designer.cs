@@ -29,41 +29,71 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_MAINS));
-            BunifuAnimatorNS.Animation animation6 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation5 = new BunifuAnimatorNS.Animation();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             this.TimerTimeNow = new System.Windows.Forms.Timer(this.components);
             this.TimerOpenLoginFromOpen = new System.Windows.Forms.Timer(this.components);
             this.TimerStatistics = new System.Windows.Forms.Timer(this.components);
             this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.PnlTop = new System.Windows.Forms.Panel();
+            this.BtnAdmin = new Siticone.UI.WinForms.SiticoneRoundedButton();
+            this.BtnSet = new Siticone.UI.WinForms.SiticoneRoundedButton();
+            this.CmdClose = new Siticone.UI.WinForms.SiticoneRoundedButton();
             this.LblHome = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnslide = new System.Windows.Forms.PictureBox();
+            this.PicLogo = new System.Windows.Forms.PictureBox();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.SlideBar = new System.Windows.Forms.FlowLayoutPanel();
+            this.Btn01 = new System.Windows.Forms.Button();
             this.PL01 = new System.Windows.Forms.Panel();
+            this.Btn02 = new System.Windows.Forms.Button();
             this.PL02 = new System.Windows.Forms.Panel();
             this.Pnl02 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnListSub = new System.Windows.Forms.Button();
+            this.btnAddSub = new System.Windows.Forms.Button();
+            this.Btn04 = new System.Windows.Forms.Button();
             this.PL04 = new System.Windows.Forms.Panel();
             this.Pnl04 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.BtnPaie = new System.Windows.Forms.Button();
+            this.BtnAbomentEtude = new System.Windows.Forms.Button();
+            this.Btn05 = new System.Windows.Forms.Button();
             this.PL05 = new System.Windows.Forms.Panel();
             this.Pnl05 = new System.Windows.Forms.Panel();
+            this.BtnRPT02 = new System.Windows.Forms.Button();
+            this.BtnRPT01 = new System.Windows.Forms.Button();
+            this.Btn09 = new System.Windows.Forms.Button();
             this.PL09 = new System.Windows.Forms.Panel();
             this.Pnl09 = new System.Windows.Forms.Panel();
+            this.BtnRestore = new System.Windows.Forms.Button();
+            this.BtnUsersPermissions = new System.Windows.Forms.Button();
+            this.BtnAddUser = new System.Windows.Forms.Button();
+            this.Btn10 = new System.Windows.Forms.Button();
             this.PL10 = new System.Windows.Forms.Panel();
             this.Pnl10 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
             this.Bar1 = new System.Windows.Forms.Panel();
             this.StatusBarItemUser = new System.Windows.Forms.TextBox();
             this.StatusBarItemTimes = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.StatusBarItemDate = new System.Windows.Forms.Label();
+            this.PictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel_container = new Guna.UI2.WinForms.Guna2Panel();
             this.bunifuTransition2 = new BunifuAnimatorNS.BunifuTransition(this.components);
@@ -72,52 +102,11 @@
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.bunifuTransition3 = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.Btn01 = new System.Windows.Forms.Button();
-            this.Btn02 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.Btn04 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.BtnPaie = new System.Windows.Forms.Button();
-            this.BtnAbomentEtude = new System.Windows.Forms.Button();
-            this.Btn05 = new System.Windows.Forms.Button();
-            this.BtnRPT02 = new System.Windows.Forms.Button();
-            this.BtnRPT01 = new System.Windows.Forms.Button();
-            this.Btn09 = new System.Windows.Forms.Button();
-            this.BtnRestore = new System.Windows.Forms.Button();
-            this.BtnUsersPermissions = new System.Windows.Forms.Button();
-            this.BtnAddUser = new System.Windows.Forms.Button();
-            this.Btn10 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.BtnAdmin = new Siticone.UI.WinForms.SiticoneRoundedButton();
-            this.BtnSet = new Siticone.UI.WinForms.SiticoneRoundedButton();
-            this.CmdClose = new Siticone.UI.WinForms.SiticoneRoundedButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnslide = new System.Windows.Forms.PictureBox();
-            this.PicLogo = new System.Windows.Forms.PictureBox();
-            this.PictureBox3 = new System.Windows.Forms.PictureBox();
             this.tBLEMPSBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
-            this.Column10 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PnlTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnslide)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -128,13 +117,8 @@
             this.Pnl09.SuspendLayout();
             this.Pnl10.SuspendLayout();
             this.Bar1.SuspendLayout();
-            this.guna2Panel_container.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnslide)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tBLEMPSBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // TimerTimeNow
@@ -154,22 +138,22 @@
             // 
             this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
             this.bunifuTransition1.Cursor = null;
-            animation4.AnimateOnlyDifferences = true;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 0;
-            animation4.Padding = new System.Windows.Forms.Padding(0);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation4;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
             // 
             // PnlTop
             // 
@@ -196,6 +180,69 @@
             this.PnlTop.Size = new System.Drawing.Size(1274, 128);
             this.PnlTop.TabIndex = 42;
             // 
+            // BtnAdmin
+            // 
+            this.BtnAdmin.CheckedState.Parent = this.BtnAdmin;
+            this.BtnAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAdmin.CustomImages.Parent = this.BtnAdmin;
+            this.bunifuTransition3.SetDecoration(this.BtnAdmin, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.BtnAdmin, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.BtnAdmin, BunifuAnimatorNS.DecorationType.None);
+            this.BtnAdmin.FillColor = System.Drawing.Color.Transparent;
+            this.BtnAdmin.Font = new System.Drawing.Font("JF Flat", 10F, System.Drawing.FontStyle.Bold);
+            this.BtnAdmin.ForeColor = System.Drawing.Color.White;
+            this.BtnAdmin.HoveredState.Parent = this.BtnAdmin;
+            this.BtnAdmin.Image = global::FitnessValleyManager.Properties.Resources.man;
+            this.BtnAdmin.ImageSize = new System.Drawing.Size(25, 25);
+            this.BtnAdmin.Location = new System.Drawing.Point(78, 1);
+            this.BtnAdmin.Name = "BtnAdmin";
+            this.BtnAdmin.ShadowDecoration.Parent = this.BtnAdmin;
+            this.BtnAdmin.Size = new System.Drawing.Size(32, 32);
+            this.BtnAdmin.TabIndex = 196;
+            this.BtnAdmin.Click += new System.EventHandler(this.BtnAdmin_Click);
+            // 
+            // BtnSet
+            // 
+            this.BtnSet.CheckedState.Parent = this.BtnSet;
+            this.BtnSet.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSet.CustomImages.Parent = this.BtnSet;
+            this.bunifuTransition3.SetDecoration(this.BtnSet, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.BtnSet, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.BtnSet, BunifuAnimatorNS.DecorationType.None);
+            this.BtnSet.FillColor = System.Drawing.Color.Transparent;
+            this.BtnSet.Font = new System.Drawing.Font("JF Flat", 10F, System.Drawing.FontStyle.Bold);
+            this.BtnSet.ForeColor = System.Drawing.Color.White;
+            this.BtnSet.HoveredState.Parent = this.BtnSet;
+            this.BtnSet.Image = global::FitnessValleyManager.Properties.Resources.Settings_5030px;
+            this.BtnSet.ImageSize = new System.Drawing.Size(25, 25);
+            this.BtnSet.Location = new System.Drawing.Point(40, 1);
+            this.BtnSet.Name = "BtnSet";
+            this.BtnSet.ShadowDecoration.Parent = this.BtnSet;
+            this.BtnSet.Size = new System.Drawing.Size(32, 32);
+            this.BtnSet.TabIndex = 195;
+            this.BtnSet.Click += new System.EventHandler(this.BtnSet_Click);
+            // 
+            // CmdClose
+            // 
+            this.CmdClose.CheckedState.Parent = this.CmdClose;
+            this.CmdClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CmdClose.CustomImages.Parent = this.CmdClose;
+            this.bunifuTransition3.SetDecoration(this.CmdClose, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.CmdClose, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.CmdClose, BunifuAnimatorNS.DecorationType.None);
+            this.CmdClose.FillColor = System.Drawing.Color.Transparent;
+            this.CmdClose.Font = new System.Drawing.Font("JF Flat", 10F, System.Drawing.FontStyle.Bold);
+            this.CmdClose.ForeColor = System.Drawing.Color.White;
+            this.CmdClose.HoveredState.Parent = this.CmdClose;
+            this.CmdClose.Image = global::FitnessValleyManager.Properties.Resources.Shutdown_50px;
+            this.CmdClose.ImageSize = new System.Drawing.Size(25, 25);
+            this.CmdClose.Location = new System.Drawing.Point(5, 2);
+            this.CmdClose.Name = "CmdClose";
+            this.CmdClose.ShadowDecoration.Parent = this.CmdClose;
+            this.CmdClose.Size = new System.Drawing.Size(32, 32);
+            this.CmdClose.TabIndex = 194;
+            this.CmdClose.Click += new System.EventHandler(this.CmdClose_Click);
+            // 
             // LblHome
             // 
             this.LblHome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -211,6 +258,19 @@
             this.LblHome.Size = new System.Drawing.Size(438, 33);
             this.LblHome.TabIndex = 189;
             this.LblHome.Text = "  برنامج إدارة نادي رياضي وادي اللياقة";
+            // 
+            // pictureBox2
+            // 
+            this.bunifuTransition3.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox2.Image = global::FitnessValleyManager.Properties.Resources.Filled_Circle_50px;
+            this.pictureBox2.Location = new System.Drawing.Point(189, 9);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(20, 18);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 186;
+            this.pictureBox2.TabStop = false;
             // 
             // label7
             // 
@@ -242,6 +302,40 @@
             this.label5.Size = new System.Drawing.Size(85, 18);
             this.label5.TabIndex = 42;
             this.label5.Text = "[نسخة تجريبية]";
+            // 
+            // btnslide
+            // 
+            this.btnslide.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnslide.BackColor = System.Drawing.Color.Transparent;
+            this.btnslide.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition3.SetDecoration(this.btnslide, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btnslide, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.btnslide, BunifuAnimatorNS.DecorationType.None);
+            this.btnslide.Image = global::FitnessValleyManager.Properties.Resources.Bulleted_List_50px;
+            this.btnslide.Location = new System.Drawing.Point(963, 61);
+            this.btnslide.Name = "btnslide";
+            this.btnslide.Size = new System.Drawing.Size(40, 40);
+            this.btnslide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnslide.TabIndex = 9;
+            this.btnslide.TabStop = false;
+            this.btnslide.Click += new System.EventHandler(this.btnslide_Click);
+            // 
+            // PicLogo
+            // 
+            this.PicLogo.BackColor = System.Drawing.Color.Transparent;
+            this.PicLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicLogo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition3.SetDecoration(this.PicLogo, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.PicLogo, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.PicLogo, BunifuAnimatorNS.DecorationType.None);
+            this.PicLogo.Dock = System.Windows.Forms.DockStyle.Right;
+            this.PicLogo.Image = global::FitnessValleyManager.Properties.Resources.شعار_النادي_1_removebg_preview;
+            this.PicLogo.Location = new System.Drawing.Point(1009, 0);
+            this.PicLogo.Name = "PicLogo";
+            this.PicLogo.Size = new System.Drawing.Size(265, 128);
+            this.PicLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PicLogo.TabIndex = 37;
+            this.PicLogo.TabStop = false;
             // 
             // dataGridView4
             // 
@@ -311,326 +405,6 @@
             this.SlideBar.Size = new System.Drawing.Size(265, 587);
             this.SlideBar.TabIndex = 39;
             // 
-            // PL01
-            // 
-            this.PL01.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bunifuTransition1.SetDecoration(this.PL01, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.PL01, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition3.SetDecoration(this.PL01, BunifuAnimatorNS.DecorationType.None);
-            this.PL01.Location = new System.Drawing.Point(230, 3);
-            this.PL01.Name = "PL01";
-            this.PL01.Size = new System.Drawing.Size(10, 40);
-            this.PL01.TabIndex = 12;
-            // 
-            // PL02
-            // 
-            this.PL02.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bunifuTransition1.SetDecoration(this.PL02, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.PL02, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition3.SetDecoration(this.PL02, BunifuAnimatorNS.DecorationType.None);
-            this.PL02.Location = new System.Drawing.Point(230, 49);
-            this.PL02.Name = "PL02";
-            this.PL02.Size = new System.Drawing.Size(10, 40);
-            this.PL02.TabIndex = 24;
-            // 
-            // Pnl02
-            // 
-            this.Pnl02.AutoScroll = true;
-            this.Pnl02.BackColor = System.Drawing.Color.Transparent;
-            this.Pnl02.Controls.Add(this.button2);
-            this.Pnl02.Controls.Add(this.button1);
-            this.Pnl02.Controls.Add(this.button10);
-            this.Pnl02.Controls.Add(this.button6);
-            this.bunifuTransition1.SetDecoration(this.Pnl02, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.Pnl02, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition3.SetDecoration(this.Pnl02, BunifuAnimatorNS.DecorationType.None);
-            this.Pnl02.Location = new System.Drawing.Point(3, 95);
-            this.Pnl02.Name = "Pnl02";
-            this.Pnl02.Size = new System.Drawing.Size(221, 170);
-            this.Pnl02.TabIndex = 26;
-            this.Pnl02.Visible = false;
-            // 
-            // PL04
-            // 
-            this.PL04.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bunifuTransition1.SetDecoration(this.PL04, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.PL04, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition3.SetDecoration(this.PL04, BunifuAnimatorNS.DecorationType.None);
-            this.PL04.Location = new System.Drawing.Point(230, 271);
-            this.PL04.Name = "PL04";
-            this.PL04.Size = new System.Drawing.Size(10, 40);
-            this.PL04.TabIndex = 30;
-            // 
-            // Pnl04
-            // 
-            this.Pnl04.AutoScroll = true;
-            this.Pnl04.BackColor = System.Drawing.Color.Transparent;
-            this.Pnl04.Controls.Add(this.button4);
-            this.Pnl04.Controls.Add(this.button3);
-            this.Pnl04.Controls.Add(this.BtnPaie);
-            this.Pnl04.Controls.Add(this.BtnAbomentEtude);
-            this.bunifuTransition1.SetDecoration(this.Pnl04, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.Pnl04, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition3.SetDecoration(this.Pnl04, BunifuAnimatorNS.DecorationType.None);
-            this.Pnl04.Location = new System.Drawing.Point(3, 317);
-            this.Pnl04.Name = "Pnl04";
-            this.Pnl04.Size = new System.Drawing.Size(221, 166);
-            this.Pnl04.TabIndex = 32;
-            this.Pnl04.Visible = false;
-            // 
-            // PL05
-            // 
-            this.PL05.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bunifuTransition1.SetDecoration(this.PL05, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.PL05, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition3.SetDecoration(this.PL05, BunifuAnimatorNS.DecorationType.None);
-            this.PL05.Location = new System.Drawing.Point(230, 489);
-            this.PL05.Name = "PL05";
-            this.PL05.Size = new System.Drawing.Size(10, 40);
-            this.PL05.TabIndex = 33;
-            // 
-            // Pnl05
-            // 
-            this.Pnl05.AutoScroll = true;
-            this.Pnl05.BackColor = System.Drawing.Color.Transparent;
-            this.Pnl05.Controls.Add(this.BtnRPT02);
-            this.Pnl05.Controls.Add(this.BtnRPT01);
-            this.bunifuTransition1.SetDecoration(this.Pnl05, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.Pnl05, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition3.SetDecoration(this.Pnl05, BunifuAnimatorNS.DecorationType.None);
-            this.Pnl05.Location = new System.Drawing.Point(3, 535);
-            this.Pnl05.Name = "Pnl05";
-            this.Pnl05.Size = new System.Drawing.Size(221, 88);
-            this.Pnl05.TabIndex = 35;
-            this.Pnl05.Visible = false;
-            // 
-            // PL09
-            // 
-            this.PL09.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bunifuTransition1.SetDecoration(this.PL09, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.PL09, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition3.SetDecoration(this.PL09, BunifuAnimatorNS.DecorationType.None);
-            this.PL09.Location = new System.Drawing.Point(230, 629);
-            this.PL09.Name = "PL09";
-            this.PL09.Size = new System.Drawing.Size(10, 40);
-            this.PL09.TabIndex = 45;
-            // 
-            // Pnl09
-            // 
-            this.Pnl09.AutoScroll = true;
-            this.Pnl09.BackColor = System.Drawing.Color.Transparent;
-            this.Pnl09.Controls.Add(this.BtnRestore);
-            this.Pnl09.Controls.Add(this.BtnUsersPermissions);
-            this.Pnl09.Controls.Add(this.BtnAddUser);
-            this.bunifuTransition1.SetDecoration(this.Pnl09, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.Pnl09, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition3.SetDecoration(this.Pnl09, BunifuAnimatorNS.DecorationType.None);
-            this.Pnl09.Location = new System.Drawing.Point(3, 675);
-            this.Pnl09.Name = "Pnl09";
-            this.Pnl09.Size = new System.Drawing.Size(221, 124);
-            this.Pnl09.TabIndex = 47;
-            this.Pnl09.Visible = false;
-            // 
-            // PL10
-            // 
-            this.PL10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bunifuTransition1.SetDecoration(this.PL10, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.PL10, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition3.SetDecoration(this.PL10, BunifuAnimatorNS.DecorationType.None);
-            this.PL10.Location = new System.Drawing.Point(230, 805);
-            this.PL10.Name = "PL10";
-            this.PL10.Size = new System.Drawing.Size(10, 40);
-            this.PL10.TabIndex = 48;
-            // 
-            // Pnl10
-            // 
-            this.Pnl10.AutoScroll = true;
-            this.Pnl10.BackColor = System.Drawing.Color.Transparent;
-            this.Pnl10.Controls.Add(this.button7);
-            this.Pnl10.Controls.Add(this.button8);
-            this.Pnl10.Controls.Add(this.button9);
-            this.Pnl10.Controls.Add(this.button11);
-            this.Pnl10.Controls.Add(this.button12);
-            this.Pnl10.Controls.Add(this.button13);
-            this.Pnl10.Controls.Add(this.button14);
-            this.bunifuTransition1.SetDecoration(this.Pnl10, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.Pnl10, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition3.SetDecoration(this.Pnl10, BunifuAnimatorNS.DecorationType.None);
-            this.Pnl10.Location = new System.Drawing.Point(3, 851);
-            this.Pnl10.Name = "Pnl10";
-            this.Pnl10.Size = new System.Drawing.Size(221, 291);
-            this.Pnl10.TabIndex = 50;
-            this.Pnl10.Visible = false;
-            // 
-            // Bar1
-            // 
-            this.Bar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(80)))), ((int)(((byte)(141)))));
-            this.Bar1.Controls.Add(this.StatusBarItemUser);
-            this.Bar1.Controls.Add(this.StatusBarItemTimes);
-            this.Bar1.Controls.Add(this.label2);
-            this.Bar1.Controls.Add(this.StatusBarItemDate);
-            this.Bar1.Controls.Add(this.PictureBox3);
-            this.Bar1.Controls.Add(this.label1);
-            this.bunifuTransition1.SetDecoration(this.Bar1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.Bar1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition3.SetDecoration(this.Bar1, BunifuAnimatorNS.DecorationType.None);
-            this.Bar1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Bar1.Location = new System.Drawing.Point(0, 715);
-            this.Bar1.Name = "Bar1";
-            this.Bar1.Size = new System.Drawing.Size(1274, 25);
-            this.Bar1.TabIndex = 11;
-            // 
-            // StatusBarItemUser
-            // 
-            this.StatusBarItemUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(80)))), ((int)(((byte)(141)))));
-            this.StatusBarItemUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuTransition3.SetDecoration(this.StatusBarItemUser, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.StatusBarItemUser, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.StatusBarItemUser, BunifuAnimatorNS.DecorationType.None);
-            this.StatusBarItemUser.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusBarItemUser.ForeColor = System.Drawing.Color.White;
-            this.StatusBarItemUser.Location = new System.Drawing.Point(937, 5);
-            this.StatusBarItemUser.Name = "StatusBarItemUser";
-            this.StatusBarItemUser.Size = new System.Drawing.Size(209, 16);
-            this.StatusBarItemUser.TabIndex = 44;
-            this.StatusBarItemUser.Text = "ADMIN";
-            // 
-            // StatusBarItemTimes
-            // 
-            this.StatusBarItemTimes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.StatusBarItemTimes.AutoSize = true;
-            this.StatusBarItemTimes.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition3.SetDecoration(this.StatusBarItemTimes, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.StatusBarItemTimes, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.StatusBarItemTimes, BunifuAnimatorNS.DecorationType.None);
-            this.StatusBarItemTimes.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.StatusBarItemTimes.ForeColor = System.Drawing.Color.Lime;
-            this.StatusBarItemTimes.Location = new System.Drawing.Point(611, 5);
-            this.StatusBarItemTimes.Name = "StatusBarItemTimes";
-            this.StatusBarItemTimes.Size = new System.Drawing.Size(49, 17);
-            this.StatusBarItemTimes.TabIndex = 43;
-            this.StatusBarItemTimes.Text = "12:00";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition3.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.Lime;
-            this.label2.Location = new System.Drawing.Point(1244, 4);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 19);
-            this.label2.TabIndex = 37;
-            this.label2.Text = "01";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Visible = false;
-            // 
-            // StatusBarItemDate
-            // 
-            this.StatusBarItemDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.StatusBarItemDate.AutoSize = true;
-            this.StatusBarItemDate.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition3.SetDecoration(this.StatusBarItemDate, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.StatusBarItemDate, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.StatusBarItemDate, BunifuAnimatorNS.DecorationType.None);
-            this.StatusBarItemDate.Font = new System.Drawing.Font("JF Flat", 10F, System.Drawing.FontStyle.Bold);
-            this.StatusBarItemDate.ForeColor = System.Drawing.Color.Lime;
-            this.StatusBarItemDate.Location = new System.Drawing.Point(792, 0);
-            this.StatusBarItemDate.Name = "StatusBarItemDate";
-            this.StatusBarItemDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.StatusBarItemDate.Size = new System.Drawing.Size(93, 24);
-            this.StatusBarItemDate.TabIndex = 42;
-            this.StatusBarItemDate.Text = "2020/05/10";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition3.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(1143, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 19);
-            this.label1.TabIndex = 36;
-            this.label1.Text = "المستخدم :";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // guna2Panel_container
-            // 
-            this.guna2Panel_container.Controls.Add(this.gunaDataGridView1);
-            this.bunifuTransition1.SetDecoration(this.guna2Panel_container, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.guna2Panel_container, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition3.SetDecoration(this.guna2Panel_container, BunifuAnimatorNS.DecorationType.None);
-            this.guna2Panel_container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel_container.Location = new System.Drawing.Point(265, 128);
-            this.guna2Panel_container.Name = "guna2Panel_container";
-            this.guna2Panel_container.ShadowDecoration.Parent = this.guna2Panel_container;
-            this.guna2Panel_container.Size = new System.Drawing.Size(1009, 587);
-            this.guna2Panel_container.TabIndex = 43;
-            // 
-            // bunifuTransition2
-            // 
-            this.bunifuTransition2.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
-            this.bunifuTransition2.Cursor = null;
-            animation6.AnimateOnlyDifferences = true;
-            animation6.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.BlindCoeff")));
-            animation6.LeafCoeff = 0F;
-            animation6.MaxTime = 1F;
-            animation6.MinTime = 0F;
-            animation6.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicCoeff")));
-            animation6.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicShift")));
-            animation6.MosaicSize = 0;
-            animation6.Padding = new System.Windows.Forms.Padding(0);
-            animation6.RotateCoeff = 0F;
-            animation6.RotateLimit = 0F;
-            animation6.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.ScaleCoeff")));
-            animation6.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.SlideCoeff")));
-            animation6.TimeCoeff = 0F;
-            animation6.TransparencyCoeff = 0F;
-            this.bunifuTransition2.DefaultAnimation = animation6;
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 25;
-            // 
-            // timer2
-            // 
-            this.timer2.Enabled = true;
-            // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.TargetControl = null;
-            this.guna2DragControl1.UseTransparentDrag = true;
-            // 
-            // bunifuTransition3
-            // 
-            this.bunifuTransition3.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
-            this.bunifuTransition3.Cursor = null;
-            animation5.AnimateOnlyDifferences = true;
-            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
-            animation5.LeafCoeff = 0F;
-            animation5.MaxTime = 1F;
-            animation5.MinTime = 0F;
-            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
-            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
-            animation5.MosaicSize = 0;
-            animation5.Padding = new System.Windows.Forms.Padding(0);
-            animation5.RotateCoeff = 0F;
-            animation5.RotateLimit = 0F;
-            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
-            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
-            animation5.TimeCoeff = 0F;
-            animation5.TransparencyCoeff = 0F;
-            this.bunifuTransition3.DefaultAnimation = animation5;
-            // 
             // Btn01
             // 
             this.Btn01.BackColor = System.Drawing.Color.Transparent;
@@ -653,6 +427,17 @@
             this.Btn01.UseVisualStyleBackColor = false;
             this.Btn01.Click += new System.EventHandler(this.Btn01_Click);
             // 
+            // PL01
+            // 
+            this.PL01.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bunifuTransition1.SetDecoration(this.PL01, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.PL01, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition3.SetDecoration(this.PL01, BunifuAnimatorNS.DecorationType.None);
+            this.PL01.Location = new System.Drawing.Point(230, 3);
+            this.PL01.Name = "PL01";
+            this.PL01.Size = new System.Drawing.Size(10, 40);
+            this.PL01.TabIndex = 12;
+            // 
             // Btn02
             // 
             this.Btn02.BackColor = System.Drawing.Color.Transparent;
@@ -674,6 +459,34 @@
             this.Btn02.Text = " قسم المشتركين";
             this.Btn02.UseVisualStyleBackColor = false;
             this.Btn02.Click += new System.EventHandler(this.Btn02_Click);
+            // 
+            // PL02
+            // 
+            this.PL02.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bunifuTransition1.SetDecoration(this.PL02, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.PL02, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition3.SetDecoration(this.PL02, BunifuAnimatorNS.DecorationType.None);
+            this.PL02.Location = new System.Drawing.Point(230, 49);
+            this.PL02.Name = "PL02";
+            this.PL02.Size = new System.Drawing.Size(10, 40);
+            this.PL02.TabIndex = 24;
+            // 
+            // Pnl02
+            // 
+            this.Pnl02.AutoScroll = true;
+            this.Pnl02.BackColor = System.Drawing.Color.Transparent;
+            this.Pnl02.Controls.Add(this.button2);
+            this.Pnl02.Controls.Add(this.button1);
+            this.Pnl02.Controls.Add(this.btnListSub);
+            this.Pnl02.Controls.Add(this.btnAddSub);
+            this.bunifuTransition1.SetDecoration(this.Pnl02, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.Pnl02, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition3.SetDecoration(this.Pnl02, BunifuAnimatorNS.DecorationType.None);
+            this.Pnl02.Location = new System.Drawing.Point(3, 95);
+            this.Pnl02.Name = "Pnl02";
+            this.Pnl02.Size = new System.Drawing.Size(221, 170);
+            this.Pnl02.TabIndex = 26;
+            this.Pnl02.Visible = false;
             // 
             // button2
             // 
@@ -723,53 +536,53 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button10
+            // btnListSub
             // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition3.SetDecoration(this.button10, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.button10, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.button10, BunifuAnimatorNS.DecorationType.None);
-            this.button10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(168)))));
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("JF Flat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.Black;
-            this.button10.Image = global::FitnessValleyManager.Properties.Resources.Sans_titre;
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button10.Location = new System.Drawing.Point(0, 40);
-            this.button10.Name = "button10";
-            this.button10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button10.Size = new System.Drawing.Size(221, 40);
-            this.button10.TabIndex = 52;
-            this.button10.Text = "قائمة المشتركين";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.btnListSub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            this.btnListSub.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition3.SetDecoration(this.btnListSub, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btnListSub, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.btnListSub, BunifuAnimatorNS.DecorationType.None);
+            this.btnListSub.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnListSub.FlatAppearance.BorderSize = 0;
+            this.btnListSub.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(168)))));
+            this.btnListSub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListSub.Font = new System.Drawing.Font("JF Flat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListSub.ForeColor = System.Drawing.Color.Black;
+            this.btnListSub.Image = global::FitnessValleyManager.Properties.Resources.Sans_titre;
+            this.btnListSub.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnListSub.Location = new System.Drawing.Point(0, 40);
+            this.btnListSub.Name = "btnListSub";
+            this.btnListSub.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnListSub.Size = new System.Drawing.Size(221, 40);
+            this.btnListSub.TabIndex = 52;
+            this.btnListSub.Text = "قائمة المشتركين";
+            this.btnListSub.UseVisualStyleBackColor = false;
+            this.btnListSub.Click += new System.EventHandler(this.button10_Click);
             // 
-            // button6
+            // btnAddSub
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition3.SetDecoration(this.button6, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.button6, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.button6, BunifuAnimatorNS.DecorationType.None);
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(168)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("JF Flat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.Black;
-            this.button6.Image = global::FitnessValleyManager.Properties.Resources.Sans_titre;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.Location = new System.Drawing.Point(0, 0);
-            this.button6.Name = "button6";
-            this.button6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button6.Size = new System.Drawing.Size(221, 40);
-            this.button6.TabIndex = 45;
-            this.button6.Text = "مشترك جديد";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btnAddSub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            this.btnAddSub.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition3.SetDecoration(this.btnAddSub, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btnAddSub, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.btnAddSub, BunifuAnimatorNS.DecorationType.None);
+            this.btnAddSub.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAddSub.FlatAppearance.BorderSize = 0;
+            this.btnAddSub.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(153)))), ((int)(((byte)(168)))));
+            this.btnAddSub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddSub.Font = new System.Drawing.Font("JF Flat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddSub.ForeColor = System.Drawing.Color.Black;
+            this.btnAddSub.Image = global::FitnessValleyManager.Properties.Resources.Sans_titre;
+            this.btnAddSub.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAddSub.Location = new System.Drawing.Point(0, 0);
+            this.btnAddSub.Name = "btnAddSub";
+            this.btnAddSub.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnAddSub.Size = new System.Drawing.Size(221, 40);
+            this.btnAddSub.TabIndex = 45;
+            this.btnAddSub.Text = "مشترك جديد";
+            this.btnAddSub.UseVisualStyleBackColor = false;
+            this.btnAddSub.Click += new System.EventHandler(this.btnAddSub_Click);
             // 
             // Btn04
             // 
@@ -793,6 +606,34 @@
             this.Btn04.Text = "الاشتراكات و المدفوعات";
             this.Btn04.UseVisualStyleBackColor = false;
             this.Btn04.Click += new System.EventHandler(this.Btn04_Click);
+            // 
+            // PL04
+            // 
+            this.PL04.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bunifuTransition1.SetDecoration(this.PL04, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.PL04, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition3.SetDecoration(this.PL04, BunifuAnimatorNS.DecorationType.None);
+            this.PL04.Location = new System.Drawing.Point(230, 271);
+            this.PL04.Name = "PL04";
+            this.PL04.Size = new System.Drawing.Size(10, 40);
+            this.PL04.TabIndex = 30;
+            // 
+            // Pnl04
+            // 
+            this.Pnl04.AutoScroll = true;
+            this.Pnl04.BackColor = System.Drawing.Color.Transparent;
+            this.Pnl04.Controls.Add(this.button4);
+            this.Pnl04.Controls.Add(this.button3);
+            this.Pnl04.Controls.Add(this.BtnPaie);
+            this.Pnl04.Controls.Add(this.BtnAbomentEtude);
+            this.bunifuTransition1.SetDecoration(this.Pnl04, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.Pnl04, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition3.SetDecoration(this.Pnl04, BunifuAnimatorNS.DecorationType.None);
+            this.Pnl04.Location = new System.Drawing.Point(3, 317);
+            this.Pnl04.Name = "Pnl04";
+            this.Pnl04.Size = new System.Drawing.Size(221, 166);
+            this.Pnl04.TabIndex = 32;
+            this.Pnl04.Visible = false;
             // 
             // button4
             // 
@@ -914,6 +755,32 @@
             this.Btn05.UseVisualStyleBackColor = false;
             this.Btn05.Click += new System.EventHandler(this.Btn05_Click);
             // 
+            // PL05
+            // 
+            this.PL05.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bunifuTransition1.SetDecoration(this.PL05, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.PL05, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition3.SetDecoration(this.PL05, BunifuAnimatorNS.DecorationType.None);
+            this.PL05.Location = new System.Drawing.Point(230, 489);
+            this.PL05.Name = "PL05";
+            this.PL05.Size = new System.Drawing.Size(10, 40);
+            this.PL05.TabIndex = 33;
+            // 
+            // Pnl05
+            // 
+            this.Pnl05.AutoScroll = true;
+            this.Pnl05.BackColor = System.Drawing.Color.Transparent;
+            this.Pnl05.Controls.Add(this.BtnRPT02);
+            this.Pnl05.Controls.Add(this.BtnRPT01);
+            this.bunifuTransition1.SetDecoration(this.Pnl05, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.Pnl05, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition3.SetDecoration(this.Pnl05, BunifuAnimatorNS.DecorationType.None);
+            this.Pnl05.Location = new System.Drawing.Point(3, 535);
+            this.Pnl05.Name = "Pnl05";
+            this.Pnl05.Size = new System.Drawing.Size(221, 88);
+            this.Pnl05.TabIndex = 35;
+            this.Pnl05.Visible = false;
+            // 
             // BtnRPT02
             // 
             this.BtnRPT02.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
@@ -983,6 +850,33 @@
             this.Btn09.Text = "قسم التقارير";
             this.Btn09.UseVisualStyleBackColor = false;
             this.Btn09.Click += new System.EventHandler(this.Btn09_Click);
+            // 
+            // PL09
+            // 
+            this.PL09.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bunifuTransition1.SetDecoration(this.PL09, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.PL09, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition3.SetDecoration(this.PL09, BunifuAnimatorNS.DecorationType.None);
+            this.PL09.Location = new System.Drawing.Point(230, 629);
+            this.PL09.Name = "PL09";
+            this.PL09.Size = new System.Drawing.Size(10, 40);
+            this.PL09.TabIndex = 45;
+            // 
+            // Pnl09
+            // 
+            this.Pnl09.AutoScroll = true;
+            this.Pnl09.BackColor = System.Drawing.Color.Transparent;
+            this.Pnl09.Controls.Add(this.BtnRestore);
+            this.Pnl09.Controls.Add(this.BtnUsersPermissions);
+            this.Pnl09.Controls.Add(this.BtnAddUser);
+            this.bunifuTransition1.SetDecoration(this.Pnl09, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.Pnl09, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition3.SetDecoration(this.Pnl09, BunifuAnimatorNS.DecorationType.None);
+            this.Pnl09.Location = new System.Drawing.Point(3, 675);
+            this.Pnl09.Name = "Pnl09";
+            this.Pnl09.Size = new System.Drawing.Size(221, 124);
+            this.Pnl09.TabIndex = 47;
+            this.Pnl09.Visible = false;
             // 
             // BtnRestore
             // 
@@ -1077,6 +971,37 @@
             this.Btn10.Text = "اعدادات البرنامج";
             this.Btn10.UseVisualStyleBackColor = false;
             this.Btn10.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // PL10
+            // 
+            this.PL10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bunifuTransition1.SetDecoration(this.PL10, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.PL10, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition3.SetDecoration(this.PL10, BunifuAnimatorNS.DecorationType.None);
+            this.PL10.Location = new System.Drawing.Point(230, 805);
+            this.PL10.Name = "PL10";
+            this.PL10.Size = new System.Drawing.Size(10, 40);
+            this.PL10.TabIndex = 48;
+            // 
+            // Pnl10
+            // 
+            this.Pnl10.AutoScroll = true;
+            this.Pnl10.BackColor = System.Drawing.Color.Transparent;
+            this.Pnl10.Controls.Add(this.button7);
+            this.Pnl10.Controls.Add(this.button8);
+            this.Pnl10.Controls.Add(this.button9);
+            this.Pnl10.Controls.Add(this.button11);
+            this.Pnl10.Controls.Add(this.button12);
+            this.Pnl10.Controls.Add(this.button13);
+            this.Pnl10.Controls.Add(this.button14);
+            this.bunifuTransition1.SetDecoration(this.Pnl10, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.Pnl10, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition3.SetDecoration(this.Pnl10, BunifuAnimatorNS.DecorationType.None);
+            this.Pnl10.Location = new System.Drawing.Point(3, 851);
+            this.Pnl10.Name = "Pnl10";
+            this.Pnl10.Size = new System.Drawing.Size(221, 291);
+            this.Pnl10.TabIndex = 50;
+            this.Pnl10.Visible = false;
             // 
             // button7
             // 
@@ -1239,115 +1164,89 @@
             this.button14.Text = "إظافة مستخدم جديد";
             this.button14.UseVisualStyleBackColor = false;
             // 
-            // BtnAdmin
+            // Bar1
             // 
-            this.BtnAdmin.CheckedState.Parent = this.BtnAdmin;
-            this.BtnAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnAdmin.CustomImages.Parent = this.BtnAdmin;
-            this.bunifuTransition3.SetDecoration(this.BtnAdmin, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.BtnAdmin, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.BtnAdmin, BunifuAnimatorNS.DecorationType.None);
-            this.BtnAdmin.FillColor = System.Drawing.Color.Transparent;
-            this.BtnAdmin.Font = new System.Drawing.Font("JF Flat", 10F, System.Drawing.FontStyle.Bold);
-            this.BtnAdmin.ForeColor = System.Drawing.Color.White;
-            this.BtnAdmin.HoveredState.Parent = this.BtnAdmin;
-            this.BtnAdmin.Image = global::FitnessValleyManager.Properties.Resources.man;
-            this.BtnAdmin.ImageSize = new System.Drawing.Size(25, 25);
-            this.BtnAdmin.Location = new System.Drawing.Point(78, 1);
-            this.BtnAdmin.Name = "BtnAdmin";
-            this.BtnAdmin.ShadowDecoration.Parent = this.BtnAdmin;
-            this.BtnAdmin.Size = new System.Drawing.Size(32, 32);
-            this.BtnAdmin.TabIndex = 196;
-            this.BtnAdmin.Click += new System.EventHandler(this.BtnAdmin_Click);
+            this.Bar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(80)))), ((int)(((byte)(141)))));
+            this.Bar1.Controls.Add(this.StatusBarItemUser);
+            this.Bar1.Controls.Add(this.StatusBarItemTimes);
+            this.Bar1.Controls.Add(this.label2);
+            this.Bar1.Controls.Add(this.StatusBarItemDate);
+            this.Bar1.Controls.Add(this.PictureBox3);
+            this.Bar1.Controls.Add(this.label1);
+            this.bunifuTransition1.SetDecoration(this.Bar1, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.Bar1, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition3.SetDecoration(this.Bar1, BunifuAnimatorNS.DecorationType.None);
+            this.Bar1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Bar1.Location = new System.Drawing.Point(0, 715);
+            this.Bar1.Name = "Bar1";
+            this.Bar1.Size = new System.Drawing.Size(1274, 25);
+            this.Bar1.TabIndex = 11;
             // 
-            // BtnSet
+            // StatusBarItemUser
             // 
-            this.BtnSet.CheckedState.Parent = this.BtnSet;
-            this.BtnSet.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnSet.CustomImages.Parent = this.BtnSet;
-            this.bunifuTransition3.SetDecoration(this.BtnSet, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.BtnSet, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.BtnSet, BunifuAnimatorNS.DecorationType.None);
-            this.BtnSet.FillColor = System.Drawing.Color.Transparent;
-            this.BtnSet.Font = new System.Drawing.Font("JF Flat", 10F, System.Drawing.FontStyle.Bold);
-            this.BtnSet.ForeColor = System.Drawing.Color.White;
-            this.BtnSet.HoveredState.Parent = this.BtnSet;
-            this.BtnSet.Image = global::FitnessValleyManager.Properties.Resources.Settings_5030px;
-            this.BtnSet.ImageSize = new System.Drawing.Size(25, 25);
-            this.BtnSet.Location = new System.Drawing.Point(40, 1);
-            this.BtnSet.Name = "BtnSet";
-            this.BtnSet.ShadowDecoration.Parent = this.BtnSet;
-            this.BtnSet.Size = new System.Drawing.Size(32, 32);
-            this.BtnSet.TabIndex = 195;
-            this.BtnSet.Click += new System.EventHandler(this.BtnSet_Click);
+            this.StatusBarItemUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(80)))), ((int)(((byte)(141)))));
+            this.StatusBarItemUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuTransition3.SetDecoration(this.StatusBarItemUser, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.StatusBarItemUser, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.StatusBarItemUser, BunifuAnimatorNS.DecorationType.None);
+            this.StatusBarItemUser.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StatusBarItemUser.ForeColor = System.Drawing.Color.White;
+            this.StatusBarItemUser.Location = new System.Drawing.Point(937, 5);
+            this.StatusBarItemUser.Name = "StatusBarItemUser";
+            this.StatusBarItemUser.Size = new System.Drawing.Size(209, 16);
+            this.StatusBarItemUser.TabIndex = 44;
+            this.StatusBarItemUser.Text = "ADMIN";
             // 
-            // CmdClose
+            // StatusBarItemTimes
             // 
-            this.CmdClose.CheckedState.Parent = this.CmdClose;
-            this.CmdClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CmdClose.CustomImages.Parent = this.CmdClose;
-            this.bunifuTransition3.SetDecoration(this.CmdClose, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.CmdClose, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.CmdClose, BunifuAnimatorNS.DecorationType.None);
-            this.CmdClose.FillColor = System.Drawing.Color.Transparent;
-            this.CmdClose.Font = new System.Drawing.Font("JF Flat", 10F, System.Drawing.FontStyle.Bold);
-            this.CmdClose.ForeColor = System.Drawing.Color.White;
-            this.CmdClose.HoveredState.Parent = this.CmdClose;
-            this.CmdClose.Image = global::FitnessValleyManager.Properties.Resources.Shutdown_50px;
-            this.CmdClose.ImageSize = new System.Drawing.Size(25, 25);
-            this.CmdClose.Location = new System.Drawing.Point(5, 2);
-            this.CmdClose.Name = "CmdClose";
-            this.CmdClose.ShadowDecoration.Parent = this.CmdClose;
-            this.CmdClose.Size = new System.Drawing.Size(32, 32);
-            this.CmdClose.TabIndex = 194;
-            this.CmdClose.Click += new System.EventHandler(this.CmdClose_Click);
+            this.StatusBarItemTimes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.StatusBarItemTimes.AutoSize = true;
+            this.StatusBarItemTimes.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition3.SetDecoration(this.StatusBarItemTimes, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.StatusBarItemTimes, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.StatusBarItemTimes, BunifuAnimatorNS.DecorationType.None);
+            this.StatusBarItemTimes.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.StatusBarItemTimes.ForeColor = System.Drawing.Color.Lime;
+            this.StatusBarItemTimes.Location = new System.Drawing.Point(611, 5);
+            this.StatusBarItemTimes.Name = "StatusBarItemTimes";
+            this.StatusBarItemTimes.Size = new System.Drawing.Size(49, 17);
+            this.StatusBarItemTimes.TabIndex = 43;
+            this.StatusBarItemTimes.Text = "12:00";
             // 
-            // pictureBox2
+            // label2
             // 
-            this.bunifuTransition3.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox2.Image = global::FitnessValleyManager.Properties.Resources.Filled_Circle_50px;
-            this.pictureBox2.Location = new System.Drawing.Point(189, 9);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(20, 18);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 186;
-            this.pictureBox2.TabStop = false;
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition3.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.Lime;
+            this.label2.Location = new System.Drawing.Point(1244, 4);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(27, 19);
+            this.label2.TabIndex = 37;
+            this.label2.Text = "01";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Visible = false;
             // 
-            // btnslide
+            // StatusBarItemDate
             // 
-            this.btnslide.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnslide.BackColor = System.Drawing.Color.Transparent;
-            this.btnslide.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition3.SetDecoration(this.btnslide, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.btnslide, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.btnslide, BunifuAnimatorNS.DecorationType.None);
-            this.btnslide.Image = global::FitnessValleyManager.Properties.Resources.Bulleted_List_50px;
-            this.btnslide.Location = new System.Drawing.Point(963, 61);
-            this.btnslide.Name = "btnslide";
-            this.btnslide.Size = new System.Drawing.Size(40, 40);
-            this.btnslide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnslide.TabIndex = 9;
-            this.btnslide.TabStop = false;
-            this.btnslide.Click += new System.EventHandler(this.btnslide_Click);
-            // 
-            // PicLogo
-            // 
-            this.PicLogo.BackColor = System.Drawing.Color.Transparent;
-            this.PicLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PicLogo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition3.SetDecoration(this.PicLogo, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.PicLogo, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.PicLogo, BunifuAnimatorNS.DecorationType.None);
-            this.PicLogo.Dock = System.Windows.Forms.DockStyle.Right;
-            this.PicLogo.Image = global::FitnessValleyManager.Properties.Resources.شعار_النادي_1_removebg_preview;
-            this.PicLogo.Location = new System.Drawing.Point(1009, 0);
-            this.PicLogo.Name = "PicLogo";
-            this.PicLogo.Size = new System.Drawing.Size(265, 128);
-            this.PicLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PicLogo.TabIndex = 37;
-            this.PicLogo.TabStop = false;
+            this.StatusBarItemDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.StatusBarItemDate.AutoSize = true;
+            this.StatusBarItemDate.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition3.SetDecoration(this.StatusBarItemDate, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.StatusBarItemDate, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.StatusBarItemDate, BunifuAnimatorNS.DecorationType.None);
+            this.StatusBarItemDate.Font = new System.Drawing.Font("JF Flat", 10F, System.Drawing.FontStyle.Bold);
+            this.StatusBarItemDate.ForeColor = System.Drawing.Color.Lime;
+            this.StatusBarItemDate.Location = new System.Drawing.Point(792, 0);
+            this.StatusBarItemDate.Name = "StatusBarItemDate";
+            this.StatusBarItemDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.StatusBarItemDate.Size = new System.Drawing.Size(93, 24);
+            this.StatusBarItemDate.TabIndex = 42;
+            this.StatusBarItemDate.Text = "2020/05/10";
             // 
             // PictureBox3
             // 
@@ -1364,151 +1263,89 @@
             this.PictureBox3.TabIndex = 35;
             this.PictureBox3.TabStop = false;
             // 
-            // gunaDataGridView1
+            // label1
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
-            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.gunaDataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gunaDataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gunaDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gunaDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.gunaDataGridView1.ColumnHeadersHeight = 35;
-            this.gunaDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column10,
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8,
-            this.Column9});
-            this.bunifuTransition1.SetDecoration(this.gunaDataGridView1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition3.SetDecoration(this.gunaDataGridView1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.gunaDataGridView1, BunifuAnimatorNS.DecorationType.None);
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
-            this.gunaDataGridView1.EnableHeadersVisualStyles = false;
-            this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
-            this.gunaDataGridView1.Location = new System.Drawing.Point(51, 175);
-            this.gunaDataGridView1.Name = "gunaDataGridView1";
-            this.gunaDataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.gunaDataGridView1.RowHeadersVisible = false;
-            this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDataGridView1.Size = new System.Drawing.Size(821, 339);
-            this.gunaDataGridView1.TabIndex = 10;
-            this.gunaDataGridView1.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.FeterRiver;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.Height = 35;
-            this.gunaDataGridView1.ThemeStyle.ReadOnly = false;
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition3.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(1143, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 19);
+            this.label1.TabIndex = 36;
+            this.label1.Text = "المستخدم :";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // Column10
+            // guna2Panel_container
             // 
-            this.Column10.DividerWidth = 20;
-            this.Column10.HeaderText = "Column10";
-            this.Column10.MinimumWidth = 20;
-            this.Column10.Name = "Column10";
-            this.Column10.Text = "wxcwxc";
+            this.bunifuTransition1.SetDecoration(this.guna2Panel_container, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.guna2Panel_container, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition3.SetDecoration(this.guna2Panel_container, BunifuAnimatorNS.DecorationType.None);
+            this.guna2Panel_container.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel_container.Location = new System.Drawing.Point(265, 128);
+            this.guna2Panel_container.Name = "guna2Panel_container";
+            this.guna2Panel_container.ShadowDecoration.Parent = this.guna2Panel_container;
+            this.guna2Panel_container.Size = new System.Drawing.Size(1009, 587);
+            this.guna2Panel_container.TabIndex = 43;
             // 
-            // Column1
+            // bunifuTransition2
             // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column1.HeaderText = "رقم اللوحة";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 92;
+            this.bunifuTransition2.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+            this.bunifuTransition2.Cursor = null;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.bunifuTransition2.DefaultAnimation = animation3;
             // 
-            // Column2
+            // timer1
             // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column2.HeaderText = "رقم الـ 700";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 95;
+            this.timer1.Interval = 25;
             // 
-            // Column3
+            // timer2
             // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column3.HeaderText = "نوع التسجيل";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 104;
+            this.timer2.Enabled = true;
             // 
-            // Column4
+            // guna2DragControl1
             // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column4.HeaderText = "نوع المركبة";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 97;
+            this.guna2DragControl1.TargetControl = null;
+            this.guna2DragControl1.UseTransparentDrag = true;
             // 
-            // Column5
+            // bunifuTransition3
             // 
-            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column5.HeaderText = "صانع المركبة";
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 108;
-            // 
-            // Column6
-            // 
-            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column6.HeaderText = "طراز المركبة";
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 104;
-            // 
-            // Column7
-            // 
-            this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column7.HeaderText = "سنة الصنع";
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 96;
-            // 
-            // Column8
-            // 
-            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column8.HeaderText = "الرقم التسلسلي";
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 125;
-            // 
-            // Column9
-            // 
-            this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column9.HeaderText = "رقم الهيكل";
-            this.Column9.Name = "Column9";
-            this.Column9.Width = 93;
+            this.bunifuTransition3.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
+            this.bunifuTransition3.Cursor = null;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.bunifuTransition3.DefaultAnimation = animation2;
             // 
             // FRM_MAINS
             // 
@@ -1533,6 +1370,9 @@
             this.Load += new System.EventHandler(this.FRM_MAINS_Load);
             this.PnlTop.ResumeLayout(false);
             this.PnlTop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnslide)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -1544,13 +1384,8 @@
             this.Pnl10.ResumeLayout(false);
             this.Bar1.ResumeLayout(false);
             this.Bar1.PerformLayout();
-            this.guna2Panel_container.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnslide)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tBLEMPSBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1564,7 +1399,7 @@
         private System.Windows.Forms.Button Btn02;
         internal System.Windows.Forms.Panel PL02;
         internal System.Windows.Forms.Panel Pnl02;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnAddSub;
         private System.Windows.Forms.Button Btn04;
         internal System.Windows.Forms.Panel PL04;
         internal System.Windows.Forms.Panel Pnl04;
@@ -1588,7 +1423,7 @@
         internal System.Windows.Forms.Timer TimerTimeNow;
         internal System.Windows.Forms.Timer TimerOpenLoginFromOpen;
         internal System.Windows.Forms.Timer TimerStatistics;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btnListSub;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomEntrepriseDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn adresseEntrepriseDataGridViewTextBoxColumn;
@@ -1714,16 +1549,5 @@
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel_container;
-        private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
-        private System.Windows.Forms.DataGridViewButtonColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
     }
 }

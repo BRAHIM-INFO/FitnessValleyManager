@@ -52,7 +52,7 @@ namespace FitnessValleyManager
         {
             label_val.Text = "Messages";
             //guna2PictureBox_val.Image = Properties.Resources.chat__1_;
-            container(new Messages());
+            container(new FRM_SUBSCRIBER_LIST());
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -172,7 +172,7 @@ namespace FitnessValleyManager
         {
             label_val.Text = "Messages";
             //guna2PictureBox_val.Image = Properties.Resources.chat__1_;
-            container(new Messages());
+            container(new FRM_SUBSCRIBER_LIST());
         }
     }
 }

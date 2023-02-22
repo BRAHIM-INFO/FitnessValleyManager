@@ -24,8 +24,8 @@ namespace FitnessValleyManager
         public static int NumIdProfPoste = 0;
         bool OnModify = false;
         string Sex = "ذكر";
-        Siticone.UI.WinForms.SiticoneRoundedButton Btn_Default = new Siticone.UI.WinForms.SiticoneRoundedButton();
 
+        Siticone.UI.WinForms.SiticoneRoundedButton Btn_Default = new Siticone.UI.WinForms.SiticoneRoundedButton(); 
         ENTITIES.CLS_SUBSCRIBER CLS_SUBSCRIBER = new ENTITIES.CLS_SUBSCRIBER();
         DAL.DAL_SUBSCRIBER DAL_SUBSCRIBER = new DAL.DAL_SUBSCRIBER();
 
@@ -73,17 +73,15 @@ namespace FitnessValleyManager
             txtRegisteCivile_SUB.Enabled = Values;
             txtIDCard_SUB.Enabled = Values;
             txtNationalite_SUB.Enabled = Values;
-
+            txtDateInscrip_SUB.Enabled = Values;
             ImgAbonnee.Enabled = Values;
             imgageQRCode.Enabled = Values; 
         }
 
-        SqlConnection con;
-        SqlCommand cmd;
+       
 
         public async Task LOADING_DATA(DataGridView Dgs)
-        {
-            cmd = new SqlCommand();
+        { 
             try
             {
                 //con = new SqlConnection(Properties.Settings.Default.DB_PersonnelManagementConnectionString300);
@@ -128,6 +126,7 @@ namespace FitnessValleyManager
             //    frm.ShowDialog();
             //    this.Enabled = false;
             //} 
+
 
             EmptyData();
             EnableAll(true);
@@ -191,13 +190,11 @@ namespace FitnessValleyManager
             }
 
 
-            ////اعدادات الازرار 
-            //EmptyData();
-            //EnableAll(false);
-            //CmdNew.Enabled = true;
-            //CmdSave.Enabled = false;
-            //CmdDelete.Enabled = false;
-            //CmdModify.Enabled = false;
+            //اعدادات الازرار 
+            EmptyData();
+            EnableAll(false);
+            CmdNew.Enabled = true;
+            CmdSave.Enabled = false; 
         }
 
         private void CmdDelete_Click(object sender, EventArgs e)
@@ -237,6 +234,7 @@ namespace FitnessValleyManager
 
         private void CmdSearch_Click(object sender, EventArgs e)
         {
+            EmptyData();
             //Forms.FRM_EMP_SEARCH frm = new FRM_EMP_SEARCH("FRM_EMP_ADD");
             //frm.ShowDialog();
             //txtIdProf.Text = NumIdProf.ToString();
@@ -324,8 +322,8 @@ namespace FitnessValleyManager
 
         private void BtnCodeBarre_Click(object sender, EventArgs e)
         {
-            //Zen.Barcode.CodeQrBarcodeDraw qrcode = Zen.Barcode.BarcodeDrawFactory.CodeQr;
-            //imgageQRCode.Image = qrcode.Draw(txtID_SUB.Text, 50);
+            Zen.Barcode.CodeQrBarcodeDraw qrcode = Zen.Barcode.BarcodeDrawFactory.CodeQr;
+            imgageQRCode.Image = qrcode.Draw(txtID_SUB.Text, 50);
         }
 
         private void TxtSalaire_Leave(object sender, EventArgs e)

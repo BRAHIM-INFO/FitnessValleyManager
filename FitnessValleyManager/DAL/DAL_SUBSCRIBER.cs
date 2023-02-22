@@ -62,7 +62,7 @@ namespace FitnessValleyManager.DAL
                 Image_SUB = ConvertImage(Image_SUB)
             };
 
-          var Resp =  await client.PushAsync("TBL_SUBSCcccRIBER", dt); 
+          var Resp =  await client.PushAsync("TBL_SUBSCRIBER", dt); 
             if(Resp.StatusCode.ToString() == "OK")
             {
                 Reponce = 1;
@@ -124,26 +124,31 @@ namespace FitnessValleyManager.DAL
         public async Task<DataTable> GetAllSubscribers()
         {
             DataTable dataTableSubscriber = new DataTable();
-            dataTableSubscriber.Columns.Add("الكاي", typeof(string));
-            dataTableSubscriber.Columns.Add("الكود", typeof(string));
-            dataTableSubscriber.Columns.Add("الاسم", typeof(string));
-            dataTableSubscriber.Columns.Add("الهاتف", typeof(string));
-            dataTableSubscriber.Columns.Add("النوع", typeof(string));
-            dataTableSubscriber.Columns.Add("العنوان", typeof(string));
-            dataTableSubscriber.Columns.Add("كاشباك", typeof(string));
-            dataTableSubscriber.Columns.Add("المنطقة", typeof(string));
-            dataTableSubscriber.Columns.Add("المنطقة", typeof(Image));
-            dataTableSubscriber.Columns.Add("المنطقة", typeof(Image));
+            dataTableSubscriber.Columns.Add("A", typeof(string));
+            dataTableSubscriber.Columns.Add("B", typeof(string));
+            dataTableSubscriber.Columns.Add("C", typeof(string));
+            dataTableSubscriber.Columns.Add("D", typeof(string));
+            dataTableSubscriber.Columns.Add("E", typeof(string));
+            dataTableSubscriber.Columns.Add("F", typeof(string));
+            dataTableSubscriber.Columns.Add("G", typeof(string));
+            dataTableSubscriber.Columns.Add("H", typeof(string));
+            dataTableSubscriber.Columns.Add("I", typeof(string));
+            dataTableSubscriber.Columns.Add("J", typeof(string));
+            dataTableSubscriber.Columns.Add("K", typeof(string));
+            dataTableSubscriber.Columns.Add("L", typeof(string));
+            dataTableSubscriber.Columns.Add("M", typeof(string));
+            dataTableSubscriber.Columns.Add("N", typeof(string));
+            dataTableSubscriber.Columns.Add("ImgQrcode", typeof(string)); 
 
 
-            var Res = await client.GetAsync("Tbl_Subscriber");
+            var Res = await client.GetAsync("TBL_SUBSCRIBER");
             Dictionary<string, CLS_SUBSCRIBER> data = JsonConvert.DeserializeObject<Dictionary<string, CLS_SUBSCRIBER>>(Res.Body.ToString());
             foreach (var line in data)
             {
                 if (line.Value.Nom_SUB.ToString() != "DEFAULT")
                 {
-                    dataTableSubscriber.Rows.Add(new object[] { line.Key.ToString(),line.Value.ID_SUB, line.Value.RegisteCivile_SUB, line.Value.IDCard_SUB, line.Value.Nom_SUB,
-                    line.Value.DateNaiss_SUB, line.Value.LieuNaiss_SUB, line.Value.DateInscrip_SUB, line.Value.Sexe_SUB, line.Value.Phone_SUB, line.Value.Adresse_SUB, line.Value.Email_SUB, line.Value.Nationalite_SUB,stringToImage(line.Value.QrCode_SUB), stringToImage(line.Value.Image_SUB)});
+                    dataTableSubscriber.Rows.Add(new object[] { line.Key.ToString(), line.Value.IDCard_SUB.ToString() /*stringToImage(line.Value.Image_SUB)*/, line.Value.IDCard_SUB.ToString(), line.Value.ID_SUB.ToString(), line.Value.RegisteCivile_SUB.ToString(), line.Value.Nom_SUB.ToString(),
+                    line.Value.DateNaiss_SUB.ToString(), line.Value.LieuNaiss_SUB.ToString(), line.Value.DateInscrip_SUB.ToString(), line.Value.Sexe_SUB.ToString(), line.Value.Phone_SUB.ToString(), line.Value.Adresse_SUB.ToString(), line.Value.Email_SUB.ToString(), line.Value.Nationalite_SUB.ToString(),line.Value.IDCard_SUB.ToString() /*stringToImage(line.Value.QrCode_SUB)*/ });
                 }
             }
             return dataTableSubscriber;
@@ -165,7 +170,7 @@ namespace FitnessValleyManager.DAL
         public async Task<Image> GetQrCodeSubscriber(int ID_SUB)
         { 
             Image Qrcode = FitnessValleyManager.Properties.Resources.cf258720ded328c92d5a821c78b5a052;
-            var Res = await client.GetAsync("Tbl_Subscriber");
+            var Res = await client.GetAsync("TBL_SUBSCRIBER");
             Dictionary<string, CLS_SUBSCRIBER> data = JsonConvert.DeserializeObject<Dictionary<string, CLS_SUBSCRIBER>>(Res.Body.ToString());
             foreach (var line in data)
             {
@@ -181,7 +186,7 @@ namespace FitnessValleyManager.DAL
         public async Task<Image> GetImageSubscriber(int ID_SUB)
         {
             Image ImgSub = FitnessValleyManager.Properties.Resources.icons8_school_director_48;
-            var Res = await client.GetAsync("Tbl_Subscriber");
+            var Res = await client.GetAsync("TBL_SUBSCRIBER");
             Dictionary<string, CLS_SUBSCRIBER> data = JsonConvert.DeserializeObject<Dictionary<string, CLS_SUBSCRIBER>>(Res.Body.ToString());
             foreach (var line in data)
             {

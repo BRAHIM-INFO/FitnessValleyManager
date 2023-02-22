@@ -302,33 +302,7 @@ namespace FitnessValleyManager
 
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            guna2ShadowForm1.SetShadowForm(this);
-            //label_val.Text = "Dashboard Overview";
-            //guna2PictureBox_val.Image = Properties.Resources.dashboard__12_;
-            container(new FRM_SUBSCRIBER_ADD());
-
-            //try
-            //{
-            //    if (!TabControlHome.Tabs.Contains(newtabMnuTreasuryCard01))
-            //    {
-            //        newtabMnuTreasuryCard01 = TabControlHome.CreateTab("إظافة موظف جديد");
-            //        TabControlPanel panel = (TabControlPanel)newtabMnuTreasuryCard01.AttachedControl;
-            //        panel.Controls.Add(new Forms.FRM_EMP_ADD() { Dock = DockStyle.Fill, BorderStyle = BorderStyle.None });
-            //        TabControlHome.SelectedTab = newtabMnuTreasuryCard01;
-            //    }
-            //    else
-            //    {
-            //        TabControlHome.SelectedTab = newtabMnuTreasuryCard01;
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
-            //    this.Alert(ex.Message.ToString(), Forms.FRM_ALERT.enmType.Error);
-            //}
-        }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
         //    try
@@ -410,6 +384,11 @@ namespace FitnessValleyManager
 
         private void button10_Click(object sender, EventArgs e)
         {
+            guna2ShadowForm1.SetShadowForm(this);
+            //label_val.Text = "Dashboard Overview";
+            //guna2PictureBox_val.Image = Properties.Resources.dashboard__12_;
+            container(new FRM_SUBSCRIBER_LIST());
+
             //try
             //{
             //    if (!TabControlHome.Tabs.Contains(newtabMnuTreasuryCard02))
@@ -427,7 +406,7 @@ namespace FitnessValleyManager
             //catch (Exception ex)
             //{
             //    this.Alert(ex.Message.ToString(), Forms.FRM_ALERT.enmType.Error);
-           // }
+            // }
         }
 
 
@@ -578,7 +557,7 @@ namespace FitnessValleyManager
             guna2ShadowForm1.SetShadowForm(this);
             //label_val.Text = "Dashboard Overview";
             //guna2PictureBox_val.Image = Properties.Resources.dashboard__12_;
-            container(new Messages());
+            container(new FRM_SUBSCRIBER_LIST());
 
             //try
             //{
@@ -747,6 +726,33 @@ namespace FitnessValleyManager
                 bunifuTransition1.HideSync(Pnl09, false, BunifuAnimatorNS.Animation.VertSlide); 
                 bunifuTransition1.ShowSync(Pnl10, false, BunifuAnimatorNS.Animation.Scale);
             }
+        }
+
+        private void btnAddSub_Click(object sender, EventArgs e)
+        {
+            guna2ShadowForm1.SetShadowForm(this);
+            //label_val.Text = "Dashboard Overview";
+            //guna2PictureBox_val.Image = Properties.Resources.dashboard__12_;
+            container(new FRM_SUBSCRIBER_ADD());
+
+            //try
+            //{
+            //    if (!TabControlHome.Tabs.Contains(newtabMnuTreasuryCard01))
+            //    {
+            //        newtabMnuTreasuryCard01 = TabControlHome.CreateTab("إظافة موظف جديد");
+            //        TabControlPanel panel = (TabControlPanel)newtabMnuTreasuryCard01.AttachedControl;
+            //        panel.Controls.Add(new Forms.FRM_EMP_ADD() { Dock = DockStyle.Fill, BorderStyle = BorderStyle.None });
+            //        TabControlHome.SelectedTab = newtabMnuTreasuryCard01;
+            //    }
+            //    else
+            //    {
+            //        TabControlHome.SelectedTab = newtabMnuTreasuryCard01;
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    this.Alert(ex.Message.ToString(), Forms.FRM_ALERT.enmType.Error);
+            //}
         }
     }
 }

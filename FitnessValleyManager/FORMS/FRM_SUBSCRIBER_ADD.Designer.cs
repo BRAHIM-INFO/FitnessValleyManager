@@ -44,8 +44,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.bunifuCards2 = new Bunifu.Framework.UI.BunifuCards();
             this.txtNationalite_SUB = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -74,8 +72,6 @@
             this.txtDateNaiss_SUB = new Guna.UI.WinForms.GunaDateTimePicker();
             this.Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
             this.bunifuCards2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgageQRCode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgAbonnee)).BeginInit();
@@ -90,7 +86,7 @@
             this.Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel1.Location = new System.Drawing.Point(0, 0);
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(1060, 50);
+            this.Panel1.Size = new System.Drawing.Size(945, 50);
             this.Panel1.TabIndex = 47;
             // 
             // Label4
@@ -100,7 +96,7 @@
             this.Label4.BackColor = System.Drawing.Color.Transparent;
             this.Label4.Font = new System.Drawing.Font("JF Flat", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Label4.ForeColor = System.Drawing.Color.Black;
-            this.Label4.Location = new System.Drawing.Point(824, 10);
+            this.Label4.Location = new System.Drawing.Point(709, 10);
             this.Label4.Name = "Label4";
             this.Label4.Size = new System.Drawing.Size(183, 33);
             this.Label4.TabIndex = 24;
@@ -111,7 +107,7 @@
             this.PictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.PictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.PictureBox2.Image = global::FitnessValleyManager.Properties.Resources.icons8_school_director_48;
-            this.PictureBox2.Location = new System.Drawing.Point(1013, 6);
+            this.PictureBox2.Location = new System.Drawing.Point(898, 6);
             this.PictureBox2.Name = "PictureBox2";
             this.PictureBox2.Size = new System.Drawing.Size(40, 40);
             this.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -137,14 +133,14 @@
             this.txtAdresse_SUB.ForeColor = System.Drawing.Color.Black;
             this.txtAdresse_SUB.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAdresse_SUB.HoveredState.Parent = this.txtAdresse_SUB;
-            this.txtAdresse_SUB.Location = new System.Drawing.Point(14, 183);
+            this.txtAdresse_SUB.Location = new System.Drawing.Point(6, 180);
             this.txtAdresse_SUB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtAdresse_SUB.Name = "txtAdresse_SUB";
             this.txtAdresse_SUB.PasswordChar = '\0';
             this.txtAdresse_SUB.PlaceholderText = "";
             this.txtAdresse_SUB.SelectedText = "";
             this.txtAdresse_SUB.ShadowDecoration.Parent = this.txtAdresse_SUB;
-            this.txtAdresse_SUB.Size = new System.Drawing.Size(905, 30);
+            this.txtAdresse_SUB.Size = new System.Drawing.Size(815, 30);
             this.txtAdresse_SUB.TabIndex = 4;
             this.txtAdresse_SUB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtAdresseProf_KeyDown);
             // 
@@ -167,7 +163,7 @@
             this.txtLieuNaiss_SUB.ForeColor = System.Drawing.Color.Black;
             this.txtLieuNaiss_SUB.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLieuNaiss_SUB.HoveredState.Parent = this.txtLieuNaiss_SUB;
-            this.txtLieuNaiss_SUB.Location = new System.Drawing.Point(549, 150);
+            this.txtLieuNaiss_SUB.Location = new System.Drawing.Point(451, 150);
             this.txtLieuNaiss_SUB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtLieuNaiss_SUB.Name = "txtLieuNaiss_SUB";
             this.txtLieuNaiss_SUB.PasswordChar = '\0';
@@ -197,7 +193,7 @@
             this.txtNom_SUB.ForeColor = System.Drawing.Color.Black;
             this.txtNom_SUB.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNom_SUB.HoveredState.Parent = this.txtNom_SUB;
-            this.txtNom_SUB.Location = new System.Drawing.Point(549, 82);
+            this.txtNom_SUB.Location = new System.Drawing.Point(451, 82);
             this.txtNom_SUB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNom_SUB.Name = "txtNom_SUB";
             this.txtNom_SUB.PasswordChar = '\0';
@@ -227,7 +223,7 @@
             this.txtID_SUB.ForeColor = System.Drawing.Color.Black;
             this.txtID_SUB.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtID_SUB.HoveredState.Parent = this.txtID_SUB;
-            this.txtID_SUB.Location = new System.Drawing.Point(13, 49);
+            this.txtID_SUB.Location = new System.Drawing.Point(5, 46);
             this.txtID_SUB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtID_SUB.Name = "txtID_SUB";
             this.txtID_SUB.PasswordChar = '\0';
@@ -235,7 +231,7 @@
             this.txtID_SUB.ReadOnly = true;
             this.txtID_SUB.SelectedText = "";
             this.txtID_SUB.ShadowDecoration.Parent = this.txtID_SUB;
-            this.txtID_SUB.Size = new System.Drawing.Size(906, 30);
+            this.txtID_SUB.Size = new System.Drawing.Size(816, 30);
             this.txtID_SUB.TabIndex = 1;
             // 
             // label10
@@ -245,7 +241,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("JF Flat", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(875, 6);
+            this.label10.Location = new System.Drawing.Point(777, 6);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(134, 24);
             this.label10.TabIndex = 100;
@@ -257,7 +253,7 @@
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("JF Flat", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(412, 122);
+            this.label23.Location = new System.Drawing.Point(314, 122);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(86, 24);
             this.label23.TabIndex = 146;
@@ -269,7 +265,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("JF Flat", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(928, 189);
+            this.label14.Location = new System.Drawing.Point(830, 189);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(60, 24);
             this.label14.TabIndex = 134;
@@ -281,7 +277,7 @@
             this.Label5.AutoSize = true;
             this.Label5.Font = new System.Drawing.Font("JF Flat", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Label5.ForeColor = System.Drawing.Color.Black;
-            this.Label5.Location = new System.Drawing.Point(929, 88);
+            this.Label5.Location = new System.Drawing.Point(831, 88);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(61, 24);
             this.Label5.TabIndex = 99;
@@ -293,7 +289,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("JF Flat", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(929, 122);
+            this.label6.Location = new System.Drawing.Point(831, 122);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 24);
             this.label6.TabIndex = 105;
@@ -305,7 +301,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("JF Flat", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(928, 153);
+            this.label11.Location = new System.Drawing.Point(830, 153);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(81, 24);
             this.label11.TabIndex = 109;
@@ -317,7 +313,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("JF Flat", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(926, 55);
+            this.label1.Location = new System.Drawing.Point(828, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 24);
             this.label1.TabIndex = 101;
@@ -329,7 +325,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("JF Flat", 10F);
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(945, 108);
+            this.label13.Location = new System.Drawing.Point(847, 108);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(49, 24);
             this.label13.TabIndex = 148;
@@ -341,39 +337,11 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("JF Flat", 10F);
             this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(942, 68);
+            this.label22.Location = new System.Drawing.Point(844, 68);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(47, 24);
             this.label22.TabIndex = 144;
             this.label22.Text = "الجوال";
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Font = new System.Drawing.Font("JF Flat", 10F, System.Drawing.FontStyle.Bold);
-            this.tabControl1.Location = new System.Drawing.Point(7, 56);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.tabControl1.RightToLeftLayout = true;
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1046, 477);
-            this.tabControl1.TabIndex = 174;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.bunifuCards2);
-            this.tabPage1.Controls.Add(this.bunifuCards1);
-            this.tabPage1.Font = new System.Drawing.Font("Yu Gothic UI Light", 10F, System.Drawing.FontStyle.Bold);
-            this.tabPage1.Location = new System.Drawing.Point(4, 32);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1038, 441);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "معلومات المشترك";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // bunifuCards2
             // 
@@ -397,11 +365,11 @@
             this.bunifuCards2.Controls.Add(this.BtnWebCam);
             this.bunifuCards2.Controls.Add(this.BtnParcour);
             this.bunifuCards2.LeftSahddow = false;
-            this.bunifuCards2.Location = new System.Drawing.Point(6, 257);
+            this.bunifuCards2.Location = new System.Drawing.Point(7, 302);
             this.bunifuCards2.Name = "bunifuCards2";
             this.bunifuCards2.RightSahddow = true;
             this.bunifuCards2.ShadowDepth = 20;
-            this.bunifuCards2.Size = new System.Drawing.Size(1024, 171);
+            this.bunifuCards2.Size = new System.Drawing.Size(926, 185);
             this.bunifuCards2.TabIndex = 204;
             // 
             // txtNationalite_SUB
@@ -423,14 +391,14 @@
             this.txtNationalite_SUB.ForeColor = System.Drawing.Color.Black;
             this.txtNationalite_SUB.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNationalite_SUB.HoveredState.Parent = this.txtNationalite_SUB;
-            this.txtNationalite_SUB.Location = new System.Drawing.Point(270, 68);
+            this.txtNationalite_SUB.Location = new System.Drawing.Point(270, 148);
             this.txtNationalite_SUB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNationalite_SUB.Name = "txtNationalite_SUB";
             this.txtNationalite_SUB.PasswordChar = '\0';
             this.txtNationalite_SUB.PlaceholderText = "";
             this.txtNationalite_SUB.SelectedText = "";
             this.txtNationalite_SUB.ShadowDecoration.Parent = this.txtNationalite_SUB;
-            this.txtNationalite_SUB.Size = new System.Drawing.Size(292, 30);
+            this.txtNationalite_SUB.Size = new System.Drawing.Size(570, 30);
             this.txtNationalite_SUB.TabIndex = 199;
             // 
             // label8
@@ -439,7 +407,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("JF Flat", 10F);
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(566, 68);
+            this.label8.Location = new System.Drawing.Point(844, 148);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(57, 24);
             this.label8.TabIndex = 202;
@@ -452,7 +420,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("JF Flat", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(904, 10);
+            this.label12.Location = new System.Drawing.Point(806, 10);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(111, 24);
             this.label12.TabIndex = 100;
@@ -477,14 +445,14 @@
             this.txtEmail_SUB.ForeColor = System.Drawing.Color.Black;
             this.txtEmail_SUB.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmail_SUB.HoveredState.Parent = this.txtEmail_SUB;
-            this.txtEmail_SUB.Location = new System.Drawing.Point(646, 108);
+            this.txtEmail_SUB.Location = new System.Drawing.Point(270, 108);
             this.txtEmail_SUB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtEmail_SUB.Name = "txtEmail_SUB";
             this.txtEmail_SUB.PasswordChar = '\0';
             this.txtEmail_SUB.PlaceholderText = "";
             this.txtEmail_SUB.SelectedText = "";
             this.txtEmail_SUB.ShadowDecoration.Parent = this.txtEmail_SUB;
-            this.txtEmail_SUB.Size = new System.Drawing.Size(292, 30);
+            this.txtEmail_SUB.Size = new System.Drawing.Size(570, 30);
             this.txtEmail_SUB.TabIndex = 10;
             this.txtEmail_SUB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEmailProf_KeyDown);
             // 
@@ -507,14 +475,14 @@
             this.txtPhone_SUB.ForeColor = System.Drawing.Color.Black;
             this.txtPhone_SUB.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPhone_SUB.HoveredState.Parent = this.txtPhone_SUB;
-            this.txtPhone_SUB.Location = new System.Drawing.Point(646, 68);
+            this.txtPhone_SUB.Location = new System.Drawing.Point(270, 68);
             this.txtPhone_SUB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPhone_SUB.Name = "txtPhone_SUB";
             this.txtPhone_SUB.PasswordChar = '\0';
             this.txtPhone_SUB.PlaceholderText = "";
             this.txtPhone_SUB.SelectedText = "";
             this.txtPhone_SUB.ShadowDecoration.Parent = this.txtPhone_SUB;
-            this.txtPhone_SUB.Size = new System.Drawing.Size(292, 30);
+            this.txtPhone_SUB.Size = new System.Drawing.Size(570, 30);
             this.txtPhone_SUB.TabIndex = 8;
             this.txtPhone_SUB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTel01Prof_KeyDown);
             // 
@@ -524,7 +492,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.siticoneSeparator2.Location = new System.Drawing.Point(270, 37);
             this.siticoneSeparator2.Name = "siticoneSeparator2";
-            this.siticoneSeparator2.Size = new System.Drawing.Size(741, 10);
+            this.siticoneSeparator2.Size = new System.Drawing.Size(643, 10);
             this.siticoneSeparator2.TabIndex = 198;
             // 
             // BtnCodeBarre
@@ -639,11 +607,11 @@
             this.bunifuCards1.Controls.Add(this.Label5);
             this.bunifuCards1.Controls.Add(this.label6);
             this.bunifuCards1.LeftSahddow = false;
-            this.bunifuCards1.Location = new System.Drawing.Point(6, 4);
+            this.bunifuCards1.Location = new System.Drawing.Point(7, 56);
             this.bunifuCards1.Name = "bunifuCards1";
             this.bunifuCards1.RightSahddow = true;
             this.bunifuCards1.ShadowDepth = 20;
-            this.bunifuCards1.Size = new System.Drawing.Size(1024, 233);
+            this.bunifuCards1.Size = new System.Drawing.Size(926, 240);
             this.bunifuCards1.TabIndex = 203;
             // 
             // RB_SexeMale
@@ -653,7 +621,7 @@
             this.RB_SexeMale.Checked = true;
             this.RB_SexeMale.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(199)))), ((int)(((byte)(120)))));
             this.RB_SexeMale.Font = new System.Drawing.Font("JF Flat", 10F);
-            this.RB_SexeMale.Location = new System.Drawing.Point(627, 119);
+            this.RB_SexeMale.Location = new System.Drawing.Point(529, 119);
             this.RB_SexeMale.MinimumSize = new System.Drawing.Size(0, 21);
             this.RB_SexeMale.Name = "RB_SexeMale";
             this.RB_SexeMale.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -671,7 +639,7 @@
             this.RB_SexeFemale.AutoSize = true;
             this.RB_SexeFemale.CheckedColor = System.Drawing.Color.MediumSlateBlue;
             this.RB_SexeFemale.Font = new System.Drawing.Font("JF Flat", 10F);
-            this.RB_SexeFemale.Location = new System.Drawing.Point(553, 119);
+            this.RB_SexeFemale.Location = new System.Drawing.Point(455, 119);
             this.RB_SexeFemale.MinimumSize = new System.Drawing.Size(0, 21);
             this.RB_SexeFemale.Name = "RB_SexeFemale";
             this.RB_SexeFemale.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -688,7 +656,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("JF Flat", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(719, 122);
+            this.label7.Location = new System.Drawing.Point(621, 122);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(47, 24);
             this.label7.TabIndex = 207;
@@ -713,14 +681,14 @@
             this.txtIDCard_SUB.ForeColor = System.Drawing.Color.Black;
             this.txtIDCard_SUB.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtIDCard_SUB.HoveredState.Parent = this.txtIDCard_SUB;
-            this.txtIDCard_SUB.Location = new System.Drawing.Point(13, 150);
+            this.txtIDCard_SUB.Location = new System.Drawing.Point(5, 147);
             this.txtIDCard_SUB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtIDCard_SUB.Name = "txtIDCard_SUB";
             this.txtIDCard_SUB.PasswordChar = '\0';
             this.txtIDCard_SUB.PlaceholderText = "";
             this.txtIDCard_SUB.SelectedText = "";
             this.txtIDCard_SUB.ShadowDecoration.Parent = this.txtIDCard_SUB;
-            this.txtIDCard_SUB.Size = new System.Drawing.Size(377, 30);
+            this.txtIDCard_SUB.Size = new System.Drawing.Size(287, 30);
             this.txtIDCard_SUB.TabIndex = 205;
             this.txtIDCard_SUB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtIDCard_SUB_KeyDown);
             // 
@@ -730,7 +698,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("JF Flat", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(412, 156);
+            this.label3.Location = new System.Drawing.Point(314, 156);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 24);
             this.label3.TabIndex = 206;
@@ -755,14 +723,14 @@
             this.txtRegisteCivile_SUB.ForeColor = System.Drawing.Color.Black;
             this.txtRegisteCivile_SUB.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtRegisteCivile_SUB.HoveredState.Parent = this.txtRegisteCivile_SUB;
-            this.txtRegisteCivile_SUB.Location = new System.Drawing.Point(13, 82);
+            this.txtRegisteCivile_SUB.Location = new System.Drawing.Point(5, 79);
             this.txtRegisteCivile_SUB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtRegisteCivile_SUB.Name = "txtRegisteCivile_SUB";
             this.txtRegisteCivile_SUB.PasswordChar = '\0';
             this.txtRegisteCivile_SUB.PlaceholderText = "";
             this.txtRegisteCivile_SUB.SelectedText = "";
             this.txtRegisteCivile_SUB.ShadowDecoration.Parent = this.txtRegisteCivile_SUB;
-            this.txtRegisteCivile_SUB.Size = new System.Drawing.Size(377, 30);
+            this.txtRegisteCivile_SUB.Size = new System.Drawing.Size(287, 30);
             this.txtRegisteCivile_SUB.TabIndex = 203;
             this.txtRegisteCivile_SUB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtRegisteCivile_SUB_KeyDown);
             // 
@@ -772,7 +740,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("JF Flat", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(412, 88);
+            this.label2.Location = new System.Drawing.Point(314, 88);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 24);
             this.label2.TabIndex = 204;
@@ -844,7 +812,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.siticoneSeparator1.Location = new System.Drawing.Point(3, 35);
             this.siticoneSeparator1.Name = "siticoneSeparator1";
-            this.siticoneSeparator1.Size = new System.Drawing.Size(1002, 10);
+            this.siticoneSeparator1.Size = new System.Drawing.Size(904, 10);
             this.siticoneSeparator1.TabIndex = 198;
             // 
             // txtDateInscrip_SUB
@@ -861,7 +829,7 @@
             this.txtDateInscrip_SUB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDateInscrip_SUB.ForeColor = System.Drawing.Color.Black;
             this.txtDateInscrip_SUB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtDateInscrip_SUB.Location = new System.Drawing.Point(15, 116);
+            this.txtDateInscrip_SUB.Location = new System.Drawing.Point(7, 113);
             this.txtDateInscrip_SUB.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.txtDateInscrip_SUB.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.txtDateInscrip_SUB.Name = "txtDateInscrip_SUB";
@@ -870,7 +838,7 @@
             this.txtDateInscrip_SUB.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtDateInscrip_SUB.OnPressedColor = System.Drawing.Color.Black;
             this.txtDateInscrip_SUB.Radius = 5;
-            this.txtDateInscrip_SUB.Size = new System.Drawing.Size(375, 30);
+            this.txtDateInscrip_SUB.Size = new System.Drawing.Size(285, 30);
             this.txtDateInscrip_SUB.TabIndex = 2;
             this.txtDateInscrip_SUB.Text = "2023/02/21";
             this.txtDateInscrip_SUB.Value = new System.DateTime(2023, 2, 21, 22, 3, 13, 336);
@@ -889,7 +857,7 @@
             this.txtDateNaiss_SUB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDateNaiss_SUB.ForeColor = System.Drawing.Color.Black;
             this.txtDateNaiss_SUB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtDateNaiss_SUB.Location = new System.Drawing.Point(782, 117);
+            this.txtDateNaiss_SUB.Location = new System.Drawing.Point(684, 117);
             this.txtDateNaiss_SUB.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.txtDateNaiss_SUB.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.txtDateNaiss_SUB.Name = "txtDateNaiss_SUB";
@@ -907,8 +875,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1060, 530);
-            this.Controls.Add(this.tabControl1);
+            this.ClientSize = new System.Drawing.Size(945, 499);
+            this.Controls.Add(this.bunifuCards2);
+            this.Controls.Add(this.bunifuCards1);
             this.Controls.Add(this.Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "FRM_SUBSCRIBER_ADD";
@@ -918,8 +887,6 @@
             this.Panel1.ResumeLayout(false);
             this.Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
             this.bunifuCards2.ResumeLayout(false);
             this.bunifuCards2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgageQRCode)).EndInit();
@@ -943,8 +910,6 @@
         internal System.Windows.Forms.Label label1;
         internal System.Windows.Forms.Label label22;
         internal System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.TextBox txtRech;
         private System.Windows.Forms.BindingSource tBLPROFSBindingSource;
