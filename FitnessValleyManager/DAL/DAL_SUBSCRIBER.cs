@@ -12,180 +12,186 @@ using FireSharp.Response;
 using FireSharp.Config;
 using FireSharp.Interfaces;
 using Newtonsoft.Json;
+using FitnessValleyManager.ENTITIES;
+using System.IO;
+using System.Drawing.Imaging;
 
-namespace FitnessValleyManager.DLL
+namespace FitnessValleyManager.DAL
 {
     public class DAL_SUBSCRIBER
     {
         IFirebaseClient client;
         IFirebaseConfig con = new FirebaseConfig
         {
-            AuthSecret = "Q1qazBxZzUhEHq850QKKUrYPqlskwunw6zgpP5JC",
-            BasePath = "https://db-masionspa-f178e-default-rtdb.firebaseio.com/"
+            AuthSecret = "OiU15ePqRhbCfb05N0QVKKoaTKDBLqRMqrCH5Qg2",
+            BasePath = "https://dbfitnessvalley-default-rtdb.firebaseio.com/"
         };
 
-        public BLL_CLIENTS()
+        public DAL_SUBSCRIBER()
         {
             client = new FirebaseClient(con);
         }
 
-        //Add new Client In database
-        public async void AddClient(int ID, string NOM, string SEXE, string PHONE, string ADRESSE, string LOCATION, double CACHBACK)
+        public string ConvertImage(Bitmap tempBitmap)
         {
-            var dt = new CLS_CLIENTS
+            MemoryStream objStream = new MemoryStream();
+            tempBitmap.Save(objStream, ImageFormat.Jpeg);
+            return Convert.ToBase64String(objStream.ToArray());
+        }
+
+        //Add new Subscriber In database
+        public async Task<int> AddSubscriber(int ID_SUB ,string RegisteCivile_SUB,string IDCard_SUB,string Nom_SUB,string DateNaiss_SUB,string LieuNaiss_SUB,string DateInscrip_SUB,string Sexe_SUB ,string Phone_SUB ,string Adresse_SUB,
+            string Email_SUB, string Nationalite_SUB, Bitmap QrCode_SUB, Bitmap Image_SUB)
+        {
+            int Reponce = 0;
+            var dt = new CLS_SUBSCRIBER
             {
-                ID = ID,
-                NOM = NOM,
-                ADRESSE = ADRESSE,
-                PHONE = PHONE,
-                SEXE = SEXE,
-                CACHBACK = CACHBACK,
-                LOCATION = LOCATION
+                ID_SUB = ID_SUB,
+                RegisteCivile_SUB = RegisteCivile_SUB,
+                IDCard_SUB = IDCard_SUB,
+                Nom_SUB = Nom_SUB,
+                DateNaiss_SUB = DateNaiss_SUB,
+                LieuNaiss_SUB = LieuNaiss_SUB,
+                DateInscrip_SUB = DateInscrip_SUB,
+                Sexe_SUB = Sexe_SUB,
+                Phone_SUB = Phone_SUB,
+                Adresse_SUB = Adresse_SUB,
+                Email_SUB = Email_SUB,
+                Nationalite_SUB = Nationalite_SUB,
+                QrCode_SUB = ConvertImage(QrCode_SUB),
+                Image_SUB = ConvertImage(Image_SUB)
             };
 
-            await client.PushTaskAsync("Tbl_Client", dt);
+          var Resp =  await client.PushAsync("TBL_SUBSCcccRIBER", dt); 
+            if(Resp.StatusCode.ToString() == "OK")
+            {
+                Reponce = 1;
+            }
+            else
+            {
+                Reponce = 0;
+            }
+            return Reponce;
         }
 
-        //Update  Client In database
-        public async void UpdateClient(string Keys, int ID, string NOM, string SEXE, string PHONE, string ADRESSE, string LOCATION, double CACHBACK)
+        //Update  Subscriber In database
+        public async void UpdateSubscriber(string Keys, int ID_SUB, string RegisteCivile_SUB, string IDCard_SUB, string Nom_SUB, string DateNaiss_SUB, string LieuNaiss_SUB, string DateInscrip_SUB, string Sexe_SUB, string Phone_SUB, string Adresse_SUB, string Email_SUB, string Nationalite_SUB, Bitmap QrCode_SUB, Bitmap Image_SUB)
         {
-            var dt = new CLS_CLIENTS
+            var dt = new CLS_SUBSCRIBER
             {
-                ID = ID,
-                NOM = NOM,
-                ADRESSE = ADRESSE,
-                PHONE = PHONE,
-                SEXE = SEXE,
-                CACHBACK = CACHBACK,
-                LOCATION = LOCATION
+                ID_SUB = ID_SUB,
+                RegisteCivile_SUB = RegisteCivile_SUB,
+                IDCard_SUB = IDCard_SUB,
+                Nom_SUB = Nom_SUB,
+                DateNaiss_SUB = DateNaiss_SUB,
+                LieuNaiss_SUB = LieuNaiss_SUB,
+                DateInscrip_SUB = DateInscrip_SUB,
+                Sexe_SUB = Sexe_SUB,
+                Phone_SUB = Phone_SUB,
+                Adresse_SUB = Adresse_SUB,
+                Email_SUB = Email_SUB,
+                Nationalite_SUB = Nationalite_SUB,
+                QrCode_SUB = ConvertImage(QrCode_SUB),
+                Image_SUB = ConvertImage(Image_SUB)
             };
 
-            await client.UpdateTaskAsync("Tbl_Client/" + Keys, dt);
+            await client.UpdateAsync("TBL_SUBSCRIBER/" + Keys, dt);
         }
 
-        //Delete  Client In database
-        public async void DeleteClient(string Keys)
+        //Delete  Subscriber In database
+        public async void DeleteSubscriber(string Keys)
         {
-            await client.DeleteTaskAsync("Tbl_Client/" + Keys);
+            await client.DeleteAsync("TBL_SUBSCRIBER/" + Keys);
         }
 
-        //Incrementer ID of Client
+        //Incrementer ID of Subscriber
         public async Task<int> IncrementID()
         {
-            var Res = await client.GetTaskAsync("Tbl_Client");
-            Dictionary<string, CLS_CLIENTS> data = JsonConvert.DeserializeObject<Dictionary<string, CLS_CLIENTS>>(Res.Body.ToString());
+            var Res = await client.GetAsync("TBL_SUBSCRIBER");
+            Dictionary<string, CLS_SUBSCRIBER> data = JsonConvert.DeserializeObject<Dictionary<string, CLS_SUBSCRIBER>>(Res.Body.ToString());
 
             int maxim = 0;
             List<int> listID = new List<int>();
             foreach (var item in data)
             {
-                listID.Add(item.Value.ID);
+                listID.Add(item.Value.ID_SUB);
             }
-            maxim = listID.Max();
+            maxim = listID.Max() + 1;
             return maxim;
         }
 
-        //GetAll Client
-        public async Task<DataTable> GetAllClients()
+        //GetAll Subscriber
+        public async Task<DataTable> GetAllSubscribers()
         {
-            DataTable dataTableClient = new DataTable();
-            dataTableClient.Columns.Add("الكاي", typeof(string));
-            dataTableClient.Columns.Add("الكود", typeof(string));
-            dataTableClient.Columns.Add("الاسم", typeof(string));
-            dataTableClient.Columns.Add("الهاتف", typeof(string));
-            dataTableClient.Columns.Add("النوع", typeof(string));
-            dataTableClient.Columns.Add("العنوان", typeof(string));
-            dataTableClient.Columns.Add("كاشباك", typeof(string));
-            dataTableClient.Columns.Add("المنطقة", typeof(string));
+            DataTable dataTableSubscriber = new DataTable();
+            dataTableSubscriber.Columns.Add("الكاي", typeof(string));
+            dataTableSubscriber.Columns.Add("الكود", typeof(string));
+            dataTableSubscriber.Columns.Add("الاسم", typeof(string));
+            dataTableSubscriber.Columns.Add("الهاتف", typeof(string));
+            dataTableSubscriber.Columns.Add("النوع", typeof(string));
+            dataTableSubscriber.Columns.Add("العنوان", typeof(string));
+            dataTableSubscriber.Columns.Add("كاشباك", typeof(string));
+            dataTableSubscriber.Columns.Add("المنطقة", typeof(string));
+            dataTableSubscriber.Columns.Add("المنطقة", typeof(Image));
+            dataTableSubscriber.Columns.Add("المنطقة", typeof(Image));
 
 
-            var Res = await client.GetTaskAsync("Tbl_Client");
-            Dictionary<string, CLS_CLIENTS> data = JsonConvert.DeserializeObject<Dictionary<string, CLS_CLIENTS>>(Res.Body.ToString());
+            var Res = await client.GetAsync("Tbl_Subscriber");
+            Dictionary<string, CLS_SUBSCRIBER> data = JsonConvert.DeserializeObject<Dictionary<string, CLS_SUBSCRIBER>>(Res.Body.ToString());
             foreach (var line in data)
             {
-                if (line.Value.NOM.ToString() != "DEFAULT")
+                if (line.Value.Nom_SUB.ToString() != "DEFAULT")
                 {
-                    dataTableClient.Rows.Add(new object[] { line.Key.ToString(), line.Value.ID.ToString(), line.Value.NOM.ToString(), line.Value.PHONE.ToString(),
-                                                line.Value.SEXE.ToString(), line.Value.ADRESSE.ToString(), line.Value.CACHBACK.ToString(),line.Value.LOCATION.ToString()});
+                    dataTableSubscriber.Rows.Add(new object[] { line.Key.ToString(),line.Value.ID_SUB, line.Value.RegisteCivile_SUB, line.Value.IDCard_SUB, line.Value.Nom_SUB,
+                    line.Value.DateNaiss_SUB, line.Value.LieuNaiss_SUB, line.Value.DateInscrip_SUB, line.Value.Sexe_SUB, line.Value.Phone_SUB, line.Value.Adresse_SUB, line.Value.Email_SUB, line.Value.Nationalite_SUB,stringToImage(line.Value.QrCode_SUB), stringToImage(line.Value.Image_SUB)});
                 }
             }
-            return dataTableClient;
+            return dataTableSubscriber;
         }
 
-        public async void GetNameClient(string NOM, string PHONE)
+        //Get image from database
+        public Image stringToImage(string inputString)
         {
-            var Res = await client.GetTaskAsync("Tbl_Services");
-            Dictionary<string, CLS_SERVICES> data = JsonConvert.DeserializeObject<Dictionary<string, CLS_SERVICES>>(Res.Body.ToString());
+            byte[] imageBytes = Encoding.Unicode.GetBytes(inputString);
+
+            // Don't need to use the constructor that takes the starting offset and length
+            // as we're using the whole byte array.
+            MemoryStream ms = new MemoryStream(imageBytes); 
+            Image image = Image.FromStream(ms, true, true); 
+            return image;
+        }
+
+        //GetAll Subscriber QrCode
+        public async Task<Image> GetQrCodeSubscriber(int ID_SUB)
+        { 
+            Image Qrcode = FitnessValleyManager.Properties.Resources.cf258720ded328c92d5a821c78b5a052;
+            var Res = await client.GetAsync("Tbl_Subscriber");
+            Dictionary<string, CLS_SUBSCRIBER> data = JsonConvert.DeserializeObject<Dictionary<string, CLS_SUBSCRIBER>>(Res.Body.ToString());
             foreach (var line in data)
             {
-                if (line.Value.Name_Client.ToString() == NOM & line.Value.Phone_Client.ToString() == PHONE)
+                if (line.Value.ID_SUB == ID_SUB)
                 {
-                    var dt = new CLS_SERVICES();
-                    dt.ID_Serv = line.Value.ID_Serv;
-                    dt.NumFact = line.Value.NumFact;
-                    dt.Date_Serv = line.Value.Date_Serv;
-                    dt.Name_Client = NOM;
-                    dt.Phone_Client = PHONE;
-                    dt.Sex_Client = line.Value.Sex_Client;
-                    dt.Adresse_Client = line.Value.Adresse_Client;
-                    dt.Name_Driver = line.Value.Name_Driver;
-                    dt.Name_Employer = line.Value.Name_Employer;
-                    dt.Name_Spicialiste = line.Value.Name_Spicialiste;
-                    dt.Takyim_Serv = line.Value.Takyim_Serv;
-                    dt.NewOld_Client = line.Value.NewOld_Client;
-                    dt.HowFindUs = line.Value.HowFindUs;
-                    dt.PACK = line.Value.PACK;
-                    dt.SERVICE = line.Value.SERVICE;
-                    dt.PRICE = line.Value.PRICE;
-                    dt.Qte_Serv = line.Value.Qte_Serv;
-                    dt.txtReducServ = line.Value.txtReducServ;
-                    dt.CACHBACK = line.Value.CACHBACK;
-                    dt.Mont_Serv = line.Value.Mont_Serv;
-                    dt.txtMontant = line.Value.txtMontant;
-                    dt.txtReducTtl = line.Value.txtReducTtl;
-                    dt.TTLCachBack = line.Value.TTLCachBack;
-                    dt.txtVat = line.Value.txtVat;
-                    dt.Paeiment = line.Value.Paeiment;
-                    dt.TTL_Amount = line.Value.TTL_Amount;
-                    dt.IfUpdate = line.Value.IfUpdate;
-                    dt.IfDelate = line.Value.IfDelate;
-                    var Resx = await client.UpdateTaskAsync("Tbl_Services/" + line.Key, dt);
+                    Qrcode = stringToImage(line.Value.QrCode_SUB);
                 }
-
             }
-
+            return Qrcode;
         }
 
-        //Check If Exist Phone Number  Client In database
-        public async Task<bool> IfExistPhone(string PHONE)
+        //GetAll Subscriber Image
+        public async Task<Image> GetImageSubscriber(int ID_SUB)
         {
-            bool ExistPhone = false;
-            var Res = await client.GetTaskAsync("Tbl_Client");
-            Dictionary<string, CLS_CLIENTS> data = JsonConvert.DeserializeObject<Dictionary<string, CLS_CLIENTS>>(Res.Body.ToString());
+            Image ImgSub = FitnessValleyManager.Properties.Resources.icons8_school_director_48;
+            var Res = await client.GetAsync("Tbl_Subscriber");
+            Dictionary<string, CLS_SUBSCRIBER> data = JsonConvert.DeserializeObject<Dictionary<string, CLS_SUBSCRIBER>>(Res.Body.ToString());
             foreach (var line in data)
             {
-                if (line.Value.PHONE.ToString() == PHONE)
+                if (line.Value.ID_SUB == ID_SUB)
                 {
-                    ExistPhone = true;
+                    ImgSub = stringToImage(line.Value.Image_SUB);
                 }
             }
-            return ExistPhone;
+            return ImgSub;
         }
 
-        //Check If Exist Phone Number  Client In database
-        public async Task<bool> IfExistPhoneAfterUpdate(int ID, string PHONE)
-        {
-            bool ExistPhone = false;
-            var Res = await client.GetTaskAsync("Tbl_Client");
-            Dictionary<string, CLS_CLIENTS> data = JsonConvert.DeserializeObject<Dictionary<string, CLS_CLIENTS>>(Res.Body.ToString());
-            foreach (var line in data)
-            {
-                if (line.Value.ID == ID & line.Value.PHONE.ToString() == PHONE)
-                {
-                    ExistPhone = true;
-                }
-            }
-            return ExistPhone;
-        }
     }
 }

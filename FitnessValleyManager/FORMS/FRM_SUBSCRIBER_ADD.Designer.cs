@@ -31,10 +31,10 @@
             this.Panel1 = new System.Windows.Forms.Panel();
             this.Label4 = new System.Windows.Forms.Label();
             this.PictureBox2 = new System.Windows.Forms.PictureBox();
-            this.txtAdresseProf = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
-            this.txtLieuNaissProf = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
-            this.txtPrenomProf = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
-            this.txtIdProf = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
+            this.txtAdresse_SUB = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
+            this.txtLieuNaiss_SUB = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
+            this.txtNom_SUB = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
+            this.txtID_SUB = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -47,11 +47,11 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.bunifuCards2 = new Bunifu.Framework.UI.BunifuCards();
-            this.siticoneRoundedTextBox5 = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
+            this.txtNationalite_SUB = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.txtEmailProf = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
-            this.txtTel01Prof = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
+            this.txtEmail_SUB = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
+            this.txtPhone_SUB = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
             this.siticoneSeparator2 = new Siticone.UI.WinForms.SiticoneSeparator();
             this.BtnCodeBarre = new Siticone.UI.WinForms.SiticoneRoundedGradientButton();
             this.imgageQRCode = new System.Windows.Forms.PictureBox();
@@ -59,19 +59,19 @@
             this.BtnWebCam = new Siticone.UI.WinForms.SiticoneRoundedGradientButton();
             this.BtnParcour = new Siticone.UI.WinForms.SiticoneRoundedGradientButton();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
-            this.siticoneRoundedTextBox2 = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
+            this.RB_SexeMale = new RJCodeAdvance.RJControls.RJRadioButton();
+            this.RB_SexeFemale = new RJCodeAdvance.RJControls.RJRadioButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtIDCard_SUB = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.siticoneRoundedTextBox1 = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
+            this.txtRegisteCivile_SUB = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.CmdClose = new Siticone.UI.WinForms.SiticoneRoundedButton();
             this.CmdSave = new Siticone.UI.WinForms.SiticoneRoundedButton();
             this.CmdNew = new Siticone.UI.WinForms.SiticoneRoundedButton();
             this.siticoneSeparator1 = new Siticone.UI.WinForms.SiticoneSeparator();
-            this.txtDateNaissInscr = new Guna.UI.WinForms.GunaDateTimePicker();
-            this.txtDateNaissProf = new Guna.UI.WinForms.GunaDateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
-            this.rjRadioButton1 = new RJCodeAdvance.RJControls.RJRadioButton();
-            this.rjRadioButton2 = new RJCodeAdvance.RJControls.RJRadioButton();
+            this.txtDateInscrip_SUB = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.txtDateNaiss_SUB = new Guna.UI.WinForms.GunaDateTimePicker();
             this.Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -118,129 +118,125 @@
             this.PictureBox2.TabIndex = 23;
             this.PictureBox2.TabStop = false;
             // 
-            // txtAdresseProf
+            // txtAdresse_SUB
             // 
-            this.txtAdresseProf.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtAdresseProf.Animated = false;
-            this.txtAdresseProf.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
-            this.txtAdresseProf.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAdresseProf.DefaultText = "";
-            this.txtAdresseProf.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtAdresseProf.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtAdresseProf.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAdresseProf.DisabledState.Parent = this.txtAdresseProf;
-            this.txtAdresseProf.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAdresseProf.Enabled = false;
-            this.txtAdresseProf.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAdresseProf.FocusedState.Parent = this.txtAdresseProf;
-            this.txtAdresseProf.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtAdresseProf.ForeColor = System.Drawing.Color.Black;
-            this.txtAdresseProf.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAdresseProf.HoveredState.Parent = this.txtAdresseProf;
-            this.txtAdresseProf.Location = new System.Drawing.Point(14, 183);
-            this.txtAdresseProf.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtAdresseProf.Name = "txtAdresseProf";
-            this.txtAdresseProf.PasswordChar = '\0';
-            this.txtAdresseProf.PlaceholderText = "";
-            this.txtAdresseProf.SelectedText = "";
-            this.txtAdresseProf.ShadowDecoration.Parent = this.txtAdresseProf;
-            this.txtAdresseProf.Size = new System.Drawing.Size(905, 30);
-            this.txtAdresseProf.TabIndex = 4;
-            this.txtAdresseProf.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtAdresseProf_KeyDown);
+            this.txtAdresse_SUB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtAdresse_SUB.Animated = false;
+            this.txtAdresse_SUB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
+            this.txtAdresse_SUB.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAdresse_SUB.DefaultText = "";
+            this.txtAdresse_SUB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtAdresse_SUB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtAdresse_SUB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAdresse_SUB.DisabledState.Parent = this.txtAdresse_SUB;
+            this.txtAdresse_SUB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAdresse_SUB.Enabled = false;
+            this.txtAdresse_SUB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAdresse_SUB.FocusedState.Parent = this.txtAdresse_SUB;
+            this.txtAdresse_SUB.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtAdresse_SUB.ForeColor = System.Drawing.Color.Black;
+            this.txtAdresse_SUB.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAdresse_SUB.HoveredState.Parent = this.txtAdresse_SUB;
+            this.txtAdresse_SUB.Location = new System.Drawing.Point(14, 183);
+            this.txtAdresse_SUB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtAdresse_SUB.Name = "txtAdresse_SUB";
+            this.txtAdresse_SUB.PasswordChar = '\0';
+            this.txtAdresse_SUB.PlaceholderText = "";
+            this.txtAdresse_SUB.SelectedText = "";
+            this.txtAdresse_SUB.ShadowDecoration.Parent = this.txtAdresse_SUB;
+            this.txtAdresse_SUB.Size = new System.Drawing.Size(905, 30);
+            this.txtAdresse_SUB.TabIndex = 4;
+            this.txtAdresse_SUB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtAdresseProf_KeyDown);
             // 
-            // txtLieuNaissProf
+            // txtLieuNaiss_SUB
             // 
-            this.txtLieuNaissProf.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLieuNaissProf.Animated = false;
-            this.txtLieuNaissProf.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
-            this.txtLieuNaissProf.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtLieuNaissProf.DefaultText = "";
-            this.txtLieuNaissProf.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtLieuNaissProf.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtLieuNaissProf.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtLieuNaissProf.DisabledState.Parent = this.txtLieuNaissProf;
-            this.txtLieuNaissProf.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtLieuNaissProf.Enabled = false;
-            this.txtLieuNaissProf.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLieuNaissProf.FocusedState.Parent = this.txtLieuNaissProf;
-            this.txtLieuNaissProf.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtLieuNaissProf.ForeColor = System.Drawing.Color.Black;
-            this.txtLieuNaissProf.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLieuNaissProf.HoveredState.Parent = this.txtLieuNaissProf;
-            this.txtLieuNaissProf.Location = new System.Drawing.Point(549, 150);
-            this.txtLieuNaissProf.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtLieuNaissProf.Name = "txtLieuNaissProf";
-            this.txtLieuNaissProf.PasswordChar = '\0';
-            this.txtLieuNaissProf.PlaceholderText = "";
-            this.txtLieuNaissProf.SelectedText = "";
-            this.txtLieuNaissProf.ShadowDecoration.Parent = this.txtLieuNaissProf;
-            this.txtLieuNaissProf.Size = new System.Drawing.Size(370, 30);
-            this.txtLieuNaissProf.TabIndex = 3;
-            this.txtLieuNaissProf.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLieuNaissProf_KeyDown);
+            this.txtLieuNaiss_SUB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLieuNaiss_SUB.Animated = false;
+            this.txtLieuNaiss_SUB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
+            this.txtLieuNaiss_SUB.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtLieuNaiss_SUB.DefaultText = "";
+            this.txtLieuNaiss_SUB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtLieuNaiss_SUB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtLieuNaiss_SUB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLieuNaiss_SUB.DisabledState.Parent = this.txtLieuNaiss_SUB;
+            this.txtLieuNaiss_SUB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLieuNaiss_SUB.Enabled = false;
+            this.txtLieuNaiss_SUB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLieuNaiss_SUB.FocusedState.Parent = this.txtLieuNaiss_SUB;
+            this.txtLieuNaiss_SUB.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtLieuNaiss_SUB.ForeColor = System.Drawing.Color.Black;
+            this.txtLieuNaiss_SUB.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLieuNaiss_SUB.HoveredState.Parent = this.txtLieuNaiss_SUB;
+            this.txtLieuNaiss_SUB.Location = new System.Drawing.Point(549, 150);
+            this.txtLieuNaiss_SUB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtLieuNaiss_SUB.Name = "txtLieuNaiss_SUB";
+            this.txtLieuNaiss_SUB.PasswordChar = '\0';
+            this.txtLieuNaiss_SUB.PlaceholderText = "";
+            this.txtLieuNaiss_SUB.SelectedText = "";
+            this.txtLieuNaiss_SUB.ShadowDecoration.Parent = this.txtLieuNaiss_SUB;
+            this.txtLieuNaiss_SUB.Size = new System.Drawing.Size(370, 30);
+            this.txtLieuNaiss_SUB.TabIndex = 3;
+            this.txtLieuNaiss_SUB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLieuNaissProf_KeyDown);
             // 
-            // txtPrenomProf
+            // txtNom_SUB
             // 
-            this.txtPrenomProf.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPrenomProf.Animated = false;
-            this.txtPrenomProf.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
-            this.txtPrenomProf.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPrenomProf.DefaultText = "";
-            this.txtPrenomProf.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPrenomProf.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPrenomProf.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPrenomProf.DisabledState.Parent = this.txtPrenomProf;
-            this.txtPrenomProf.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPrenomProf.Enabled = false;
-            this.txtPrenomProf.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPrenomProf.FocusedState.Parent = this.txtPrenomProf;
-            this.txtPrenomProf.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtPrenomProf.ForeColor = System.Drawing.Color.Black;
-            this.txtPrenomProf.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPrenomProf.HoveredState.Parent = this.txtPrenomProf;
-            this.txtPrenomProf.Location = new System.Drawing.Point(549, 82);
-            this.txtPrenomProf.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtPrenomProf.Name = "txtPrenomProf";
-            this.txtPrenomProf.PasswordChar = '\0';
-            this.txtPrenomProf.PlaceholderText = "";
-            this.txtPrenomProf.SelectedText = "";
-            this.txtPrenomProf.ShadowDecoration.Parent = this.txtPrenomProf;
-            this.txtPrenomProf.Size = new System.Drawing.Size(370, 30);
-            this.txtPrenomProf.TabIndex = 2;
-            this.txtPrenomProf.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPrenomProf_KeyDown);
+            this.txtNom_SUB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNom_SUB.Animated = false;
+            this.txtNom_SUB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
+            this.txtNom_SUB.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNom_SUB.DefaultText = "";
+            this.txtNom_SUB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNom_SUB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNom_SUB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNom_SUB.DisabledState.Parent = this.txtNom_SUB;
+            this.txtNom_SUB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNom_SUB.Enabled = false;
+            this.txtNom_SUB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNom_SUB.FocusedState.Parent = this.txtNom_SUB;
+            this.txtNom_SUB.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtNom_SUB.ForeColor = System.Drawing.Color.Black;
+            this.txtNom_SUB.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNom_SUB.HoveredState.Parent = this.txtNom_SUB;
+            this.txtNom_SUB.Location = new System.Drawing.Point(549, 82);
+            this.txtNom_SUB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNom_SUB.Name = "txtNom_SUB";
+            this.txtNom_SUB.PasswordChar = '\0';
+            this.txtNom_SUB.PlaceholderText = "";
+            this.txtNom_SUB.SelectedText = "";
+            this.txtNom_SUB.ShadowDecoration.Parent = this.txtNom_SUB;
+            this.txtNom_SUB.Size = new System.Drawing.Size(370, 30);
+            this.txtNom_SUB.TabIndex = 2;
+            this.txtNom_SUB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPrenomProf_KeyDown);
             // 
-            // txtIdProf
+            // txtID_SUB
             // 
-            this.txtIdProf.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtIdProf.Animated = false;
-            this.txtIdProf.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
-            this.txtIdProf.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtIdProf.DefaultText = "";
-            this.txtIdProf.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtIdProf.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtIdProf.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtIdProf.DisabledState.Parent = this.txtIdProf;
-            this.txtIdProf.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtIdProf.Enabled = false;
-            this.txtIdProf.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtIdProf.FocusedState.Parent = this.txtIdProf;
-            this.txtIdProf.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtIdProf.ForeColor = System.Drawing.Color.Black;
-            this.txtIdProf.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtIdProf.HoveredState.Parent = this.txtIdProf;
-            this.txtIdProf.Location = new System.Drawing.Point(13, 49);
-            this.txtIdProf.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtIdProf.Name = "txtIdProf";
-            this.txtIdProf.PasswordChar = '\0';
-            this.txtIdProf.PlaceholderText = "";
-            this.txtIdProf.ReadOnly = true;
-            this.txtIdProf.SelectedText = "";
-            this.txtIdProf.ShadowDecoration.Parent = this.txtIdProf;
-            this.txtIdProf.Size = new System.Drawing.Size(906, 30);
-            this.txtIdProf.TabIndex = 1;
+            this.txtID_SUB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtID_SUB.Animated = false;
+            this.txtID_SUB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
+            this.txtID_SUB.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtID_SUB.DefaultText = "";
+            this.txtID_SUB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtID_SUB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtID_SUB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtID_SUB.DisabledState.Parent = this.txtID_SUB;
+            this.txtID_SUB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtID_SUB.Enabled = false;
+            this.txtID_SUB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtID_SUB.FocusedState.Parent = this.txtID_SUB;
+            this.txtID_SUB.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtID_SUB.ForeColor = System.Drawing.Color.Black;
+            this.txtID_SUB.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtID_SUB.HoveredState.Parent = this.txtID_SUB;
+            this.txtID_SUB.Location = new System.Drawing.Point(13, 49);
+            this.txtID_SUB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtID_SUB.Name = "txtID_SUB";
+            this.txtID_SUB.PasswordChar = '\0';
+            this.txtID_SUB.PlaceholderText = "";
+            this.txtID_SUB.ReadOnly = true;
+            this.txtID_SUB.SelectedText = "";
+            this.txtID_SUB.ShadowDecoration.Parent = this.txtID_SUB;
+            this.txtID_SUB.Size = new System.Drawing.Size(906, 30);
+            this.txtID_SUB.TabIndex = 1;
             // 
             // label10
             // 
@@ -381,17 +377,17 @@
             // 
             // bunifuCards2
             // 
-            this.bunifuCards2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.bunifuCards2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCards2.BackColor = System.Drawing.Color.White;
             this.bunifuCards2.BorderRadius = 5;
             this.bunifuCards2.BottomSahddow = true;
             this.bunifuCards2.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
-            this.bunifuCards2.Controls.Add(this.siticoneRoundedTextBox5);
+            this.bunifuCards2.Controls.Add(this.txtNationalite_SUB);
             this.bunifuCards2.Controls.Add(this.label8);
             this.bunifuCards2.Controls.Add(this.label12);
-            this.bunifuCards2.Controls.Add(this.txtEmailProf);
-            this.bunifuCards2.Controls.Add(this.txtTel01Prof);
+            this.bunifuCards2.Controls.Add(this.txtEmail_SUB);
+            this.bunifuCards2.Controls.Add(this.txtPhone_SUB);
             this.bunifuCards2.Controls.Add(this.siticoneSeparator2);
             this.bunifuCards2.Controls.Add(this.label22);
             this.bunifuCards2.Controls.Add(this.label13);
@@ -408,35 +404,34 @@
             this.bunifuCards2.Size = new System.Drawing.Size(1024, 171);
             this.bunifuCards2.TabIndex = 204;
             // 
-            // siticoneRoundedTextBox5
+            // txtNationalite_SUB
             // 
-            this.siticoneRoundedTextBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.siticoneRoundedTextBox5.Animated = false;
-            this.siticoneRoundedTextBox5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
-            this.siticoneRoundedTextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneRoundedTextBox5.DefaultText = "";
-            this.siticoneRoundedTextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.siticoneRoundedTextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.siticoneRoundedTextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneRoundedTextBox5.DisabledState.Parent = this.siticoneRoundedTextBox5;
-            this.siticoneRoundedTextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneRoundedTextBox5.Enabled = false;
-            this.siticoneRoundedTextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneRoundedTextBox5.FocusedState.Parent = this.siticoneRoundedTextBox5;
-            this.siticoneRoundedTextBox5.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.siticoneRoundedTextBox5.ForeColor = System.Drawing.Color.Black;
-            this.siticoneRoundedTextBox5.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneRoundedTextBox5.HoveredState.Parent = this.siticoneRoundedTextBox5;
-            this.siticoneRoundedTextBox5.Location = new System.Drawing.Point(270, 68);
-            this.siticoneRoundedTextBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.siticoneRoundedTextBox5.Name = "siticoneRoundedTextBox5";
-            this.siticoneRoundedTextBox5.PasswordChar = '\0';
-            this.siticoneRoundedTextBox5.PlaceholderText = "";
-            this.siticoneRoundedTextBox5.SelectedText = "";
-            this.siticoneRoundedTextBox5.ShadowDecoration.Parent = this.siticoneRoundedTextBox5;
-            this.siticoneRoundedTextBox5.Size = new System.Drawing.Size(292, 30);
-            this.siticoneRoundedTextBox5.TabIndex = 199;
+            this.txtNationalite_SUB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNationalite_SUB.Animated = false;
+            this.txtNationalite_SUB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
+            this.txtNationalite_SUB.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNationalite_SUB.DefaultText = "";
+            this.txtNationalite_SUB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNationalite_SUB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNationalite_SUB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNationalite_SUB.DisabledState.Parent = this.txtNationalite_SUB;
+            this.txtNationalite_SUB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNationalite_SUB.Enabled = false;
+            this.txtNationalite_SUB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNationalite_SUB.FocusedState.Parent = this.txtNationalite_SUB;
+            this.txtNationalite_SUB.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtNationalite_SUB.ForeColor = System.Drawing.Color.Black;
+            this.txtNationalite_SUB.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNationalite_SUB.HoveredState.Parent = this.txtNationalite_SUB;
+            this.txtNationalite_SUB.Location = new System.Drawing.Point(270, 68);
+            this.txtNationalite_SUB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNationalite_SUB.Name = "txtNationalite_SUB";
+            this.txtNationalite_SUB.PasswordChar = '\0';
+            this.txtNationalite_SUB.PlaceholderText = "";
+            this.txtNationalite_SUB.SelectedText = "";
+            this.txtNationalite_SUB.ShadowDecoration.Parent = this.txtNationalite_SUB;
+            this.txtNationalite_SUB.Size = new System.Drawing.Size(292, 30);
+            this.txtNationalite_SUB.TabIndex = 199;
             // 
             // label8
             // 
@@ -463,70 +458,70 @@
             this.label12.TabIndex = 100;
             this.label12.Text = "معلومات أخرى";
             // 
-            // txtEmailProf
+            // txtEmail_SUB
             // 
-            this.txtEmailProf.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmailProf.Animated = false;
-            this.txtEmailProf.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
-            this.txtEmailProf.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEmailProf.DefaultText = "";
-            this.txtEmailProf.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEmailProf.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEmailProf.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmailProf.DisabledState.Parent = this.txtEmailProf;
-            this.txtEmailProf.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmailProf.Enabled = false;
-            this.txtEmailProf.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmailProf.FocusedState.Parent = this.txtEmailProf;
-            this.txtEmailProf.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtEmailProf.ForeColor = System.Drawing.Color.Black;
-            this.txtEmailProf.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmailProf.HoveredState.Parent = this.txtEmailProf;
-            this.txtEmailProf.Location = new System.Drawing.Point(646, 108);
-            this.txtEmailProf.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtEmailProf.Name = "txtEmailProf";
-            this.txtEmailProf.PasswordChar = '\0';
-            this.txtEmailProf.PlaceholderText = "";
-            this.txtEmailProf.SelectedText = "";
-            this.txtEmailProf.ShadowDecoration.Parent = this.txtEmailProf;
-            this.txtEmailProf.Size = new System.Drawing.Size(292, 30);
-            this.txtEmailProf.TabIndex = 10;
-            this.txtEmailProf.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEmailProf_KeyDown);
+            this.txtEmail_SUB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtEmail_SUB.Animated = false;
+            this.txtEmail_SUB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
+            this.txtEmail_SUB.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmail_SUB.DefaultText = "";
+            this.txtEmail_SUB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtEmail_SUB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtEmail_SUB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmail_SUB.DisabledState.Parent = this.txtEmail_SUB;
+            this.txtEmail_SUB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmail_SUB.Enabled = false;
+            this.txtEmail_SUB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmail_SUB.FocusedState.Parent = this.txtEmail_SUB;
+            this.txtEmail_SUB.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtEmail_SUB.ForeColor = System.Drawing.Color.Black;
+            this.txtEmail_SUB.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmail_SUB.HoveredState.Parent = this.txtEmail_SUB;
+            this.txtEmail_SUB.Location = new System.Drawing.Point(646, 108);
+            this.txtEmail_SUB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtEmail_SUB.Name = "txtEmail_SUB";
+            this.txtEmail_SUB.PasswordChar = '\0';
+            this.txtEmail_SUB.PlaceholderText = "";
+            this.txtEmail_SUB.SelectedText = "";
+            this.txtEmail_SUB.ShadowDecoration.Parent = this.txtEmail_SUB;
+            this.txtEmail_SUB.Size = new System.Drawing.Size(292, 30);
+            this.txtEmail_SUB.TabIndex = 10;
+            this.txtEmail_SUB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEmailProf_KeyDown);
             // 
-            // txtTel01Prof
+            // txtPhone_SUB
             // 
-            this.txtTel01Prof.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTel01Prof.Animated = false;
-            this.txtTel01Prof.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
-            this.txtTel01Prof.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTel01Prof.DefaultText = "";
-            this.txtTel01Prof.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTel01Prof.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTel01Prof.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTel01Prof.DisabledState.Parent = this.txtTel01Prof;
-            this.txtTel01Prof.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTel01Prof.Enabled = false;
-            this.txtTel01Prof.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTel01Prof.FocusedState.Parent = this.txtTel01Prof;
-            this.txtTel01Prof.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtTel01Prof.ForeColor = System.Drawing.Color.Black;
-            this.txtTel01Prof.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTel01Prof.HoveredState.Parent = this.txtTel01Prof;
-            this.txtTel01Prof.Location = new System.Drawing.Point(646, 68);
-            this.txtTel01Prof.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtTel01Prof.Name = "txtTel01Prof";
-            this.txtTel01Prof.PasswordChar = '\0';
-            this.txtTel01Prof.PlaceholderText = "";
-            this.txtTel01Prof.SelectedText = "";
-            this.txtTel01Prof.ShadowDecoration.Parent = this.txtTel01Prof;
-            this.txtTel01Prof.Size = new System.Drawing.Size(292, 30);
-            this.txtTel01Prof.TabIndex = 8;
-            this.txtTel01Prof.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTel01Prof_KeyDown);
+            this.txtPhone_SUB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPhone_SUB.Animated = false;
+            this.txtPhone_SUB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
+            this.txtPhone_SUB.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPhone_SUB.DefaultText = "";
+            this.txtPhone_SUB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPhone_SUB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPhone_SUB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPhone_SUB.DisabledState.Parent = this.txtPhone_SUB;
+            this.txtPhone_SUB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPhone_SUB.Enabled = false;
+            this.txtPhone_SUB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPhone_SUB.FocusedState.Parent = this.txtPhone_SUB;
+            this.txtPhone_SUB.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtPhone_SUB.ForeColor = System.Drawing.Color.Black;
+            this.txtPhone_SUB.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPhone_SUB.HoveredState.Parent = this.txtPhone_SUB;
+            this.txtPhone_SUB.Location = new System.Drawing.Point(646, 68);
+            this.txtPhone_SUB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPhone_SUB.Name = "txtPhone_SUB";
+            this.txtPhone_SUB.PasswordChar = '\0';
+            this.txtPhone_SUB.PlaceholderText = "";
+            this.txtPhone_SUB.SelectedText = "";
+            this.txtPhone_SUB.ShadowDecoration.Parent = this.txtPhone_SUB;
+            this.txtPhone_SUB.Size = new System.Drawing.Size(292, 30);
+            this.txtPhone_SUB.TabIndex = 8;
+            this.txtPhone_SUB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTel01Prof_KeyDown);
             // 
             // siticoneSeparator2
             // 
+            this.siticoneSeparator2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.siticoneSeparator2.Location = new System.Drawing.Point(270, 37);
             this.siticoneSeparator2.Name = "siticoneSeparator2";
             this.siticoneSeparator2.Size = new System.Drawing.Size(741, 10);
@@ -612,30 +607,31 @@
             // 
             // bunifuCards1
             // 
-            this.bunifuCards1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.bunifuCards1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuCards1.BackColor = System.Drawing.Color.White;
             this.bunifuCards1.BorderRadius = 5;
             this.bunifuCards1.BottomSahddow = true;
             this.bunifuCards1.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
-            this.bunifuCards1.Controls.Add(this.rjRadioButton2);
-            this.bunifuCards1.Controls.Add(this.rjRadioButton1);
+            this.bunifuCards1.Controls.Add(this.RB_SexeMale);
+            this.bunifuCards1.Controls.Add(this.RB_SexeFemale);
             this.bunifuCards1.Controls.Add(this.label7);
-            this.bunifuCards1.Controls.Add(this.siticoneRoundedTextBox2);
+            this.bunifuCards1.Controls.Add(this.txtIDCard_SUB);
             this.bunifuCards1.Controls.Add(this.label3);
-            this.bunifuCards1.Controls.Add(this.siticoneRoundedTextBox1);
+            this.bunifuCards1.Controls.Add(this.txtRegisteCivile_SUB);
             this.bunifuCards1.Controls.Add(this.label2);
             this.bunifuCards1.Controls.Add(this.CmdClose);
             this.bunifuCards1.Controls.Add(this.CmdSave);
             this.bunifuCards1.Controls.Add(this.CmdNew);
             this.bunifuCards1.Controls.Add(this.siticoneSeparator1);
             this.bunifuCards1.Controls.Add(this.label10);
-            this.bunifuCards1.Controls.Add(this.txtDateNaissInscr);
-            this.bunifuCards1.Controls.Add(this.txtAdresseProf);
-            this.bunifuCards1.Controls.Add(this.txtDateNaissProf);
-            this.bunifuCards1.Controls.Add(this.txtLieuNaissProf);
-            this.bunifuCards1.Controls.Add(this.txtPrenomProf);
-            this.bunifuCards1.Controls.Add(this.txtIdProf);
+            this.bunifuCards1.Controls.Add(this.txtDateInscrip_SUB);
+            this.bunifuCards1.Controls.Add(this.txtAdresse_SUB);
+            this.bunifuCards1.Controls.Add(this.txtDateNaiss_SUB);
+            this.bunifuCards1.Controls.Add(this.txtLieuNaiss_SUB);
+            this.bunifuCards1.Controls.Add(this.txtNom_SUB);
+            this.bunifuCards1.Controls.Add(this.txtID_SUB);
             this.bunifuCards1.Controls.Add(this.label23);
             this.bunifuCards1.Controls.Add(this.label1);
             this.bunifuCards1.Controls.Add(this.label14);
@@ -650,35 +646,83 @@
             this.bunifuCards1.Size = new System.Drawing.Size(1024, 233);
             this.bunifuCards1.TabIndex = 203;
             // 
-            // siticoneRoundedTextBox2
+            // RB_SexeMale
             // 
-            this.siticoneRoundedTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.siticoneRoundedTextBox2.Animated = false;
-            this.siticoneRoundedTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
-            this.siticoneRoundedTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneRoundedTextBox2.DefaultText = "";
-            this.siticoneRoundedTextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.siticoneRoundedTextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.siticoneRoundedTextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneRoundedTextBox2.DisabledState.Parent = this.siticoneRoundedTextBox2;
-            this.siticoneRoundedTextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneRoundedTextBox2.Enabled = false;
-            this.siticoneRoundedTextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneRoundedTextBox2.FocusedState.Parent = this.siticoneRoundedTextBox2;
-            this.siticoneRoundedTextBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.siticoneRoundedTextBox2.ForeColor = System.Drawing.Color.Black;
-            this.siticoneRoundedTextBox2.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneRoundedTextBox2.HoveredState.Parent = this.siticoneRoundedTextBox2;
-            this.siticoneRoundedTextBox2.Location = new System.Drawing.Point(13, 150);
-            this.siticoneRoundedTextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.siticoneRoundedTextBox2.Name = "siticoneRoundedTextBox2";
-            this.siticoneRoundedTextBox2.PasswordChar = '\0';
-            this.siticoneRoundedTextBox2.PlaceholderText = "";
-            this.siticoneRoundedTextBox2.SelectedText = "";
-            this.siticoneRoundedTextBox2.ShadowDecoration.Parent = this.siticoneRoundedTextBox2;
-            this.siticoneRoundedTextBox2.Size = new System.Drawing.Size(377, 30);
-            this.siticoneRoundedTextBox2.TabIndex = 205;
+            this.RB_SexeMale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.RB_SexeMale.AutoSize = true;
+            this.RB_SexeMale.Checked = true;
+            this.RB_SexeMale.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(199)))), ((int)(((byte)(120)))));
+            this.RB_SexeMale.Font = new System.Drawing.Font("JF Flat", 10F);
+            this.RB_SexeMale.Location = new System.Drawing.Point(627, 119);
+            this.RB_SexeMale.MinimumSize = new System.Drawing.Size(0, 21);
+            this.RB_SexeMale.Name = "RB_SexeMale";
+            this.RB_SexeMale.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.RB_SexeMale.Size = new System.Drawing.Size(59, 28);
+            this.RB_SexeMale.TabIndex = 209;
+            this.RB_SexeMale.TabStop = true;
+            this.RB_SexeMale.Text = "ذكر";
+            this.RB_SexeMale.UnCheckedColor = System.Drawing.Color.Gray;
+            this.RB_SexeMale.UseVisualStyleBackColor = true;
+            this.RB_SexeMale.CheckedChanged += new System.EventHandler(this.RB_SexeMale_CheckedChanged);
+            // 
+            // RB_SexeFemale
+            // 
+            this.RB_SexeFemale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.RB_SexeFemale.AutoSize = true;
+            this.RB_SexeFemale.CheckedColor = System.Drawing.Color.MediumSlateBlue;
+            this.RB_SexeFemale.Font = new System.Drawing.Font("JF Flat", 10F);
+            this.RB_SexeFemale.Location = new System.Drawing.Point(553, 119);
+            this.RB_SexeFemale.MinimumSize = new System.Drawing.Size(0, 21);
+            this.RB_SexeFemale.Name = "RB_SexeFemale";
+            this.RB_SexeFemale.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.RB_SexeFemale.Size = new System.Drawing.Size(66, 28);
+            this.RB_SexeFemale.TabIndex = 208;
+            this.RB_SexeFemale.Text = "أنثى";
+            this.RB_SexeFemale.UnCheckedColor = System.Drawing.Color.Gray;
+            this.RB_SexeFemale.UseVisualStyleBackColor = true;
+            this.RB_SexeFemale.CheckedChanged += new System.EventHandler(this.RB_SexeFemale_CheckedChanged);
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("JF Flat", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(719, 122);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(47, 24);
+            this.label7.TabIndex = 207;
+            this.label7.Text = "الجنس";
+            // 
+            // txtIDCard_SUB
+            // 
+            this.txtIDCard_SUB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtIDCard_SUB.Animated = false;
+            this.txtIDCard_SUB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
+            this.txtIDCard_SUB.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtIDCard_SUB.DefaultText = "";
+            this.txtIDCard_SUB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtIDCard_SUB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtIDCard_SUB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIDCard_SUB.DisabledState.Parent = this.txtIDCard_SUB;
+            this.txtIDCard_SUB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIDCard_SUB.Enabled = false;
+            this.txtIDCard_SUB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtIDCard_SUB.FocusedState.Parent = this.txtIDCard_SUB;
+            this.txtIDCard_SUB.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtIDCard_SUB.ForeColor = System.Drawing.Color.Black;
+            this.txtIDCard_SUB.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtIDCard_SUB.HoveredState.Parent = this.txtIDCard_SUB;
+            this.txtIDCard_SUB.Location = new System.Drawing.Point(13, 150);
+            this.txtIDCard_SUB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtIDCard_SUB.Name = "txtIDCard_SUB";
+            this.txtIDCard_SUB.PasswordChar = '\0';
+            this.txtIDCard_SUB.PlaceholderText = "";
+            this.txtIDCard_SUB.SelectedText = "";
+            this.txtIDCard_SUB.ShadowDecoration.Parent = this.txtIDCard_SUB;
+            this.txtIDCard_SUB.Size = new System.Drawing.Size(377, 30);
+            this.txtIDCard_SUB.TabIndex = 205;
+            this.txtIDCard_SUB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtIDCard_SUB_KeyDown);
             // 
             // label3
             // 
@@ -692,35 +736,35 @@
             this.label3.TabIndex = 206;
             this.label3.Text = "رقم الهوية";
             // 
-            // siticoneRoundedTextBox1
+            // txtRegisteCivile_SUB
             // 
-            this.siticoneRoundedTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.siticoneRoundedTextBox1.Animated = false;
-            this.siticoneRoundedTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
-            this.siticoneRoundedTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneRoundedTextBox1.DefaultText = "";
-            this.siticoneRoundedTextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.siticoneRoundedTextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.siticoneRoundedTextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneRoundedTextBox1.DisabledState.Parent = this.siticoneRoundedTextBox1;
-            this.siticoneRoundedTextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneRoundedTextBox1.Enabled = false;
-            this.siticoneRoundedTextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneRoundedTextBox1.FocusedState.Parent = this.siticoneRoundedTextBox1;
-            this.siticoneRoundedTextBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.siticoneRoundedTextBox1.ForeColor = System.Drawing.Color.Black;
-            this.siticoneRoundedTextBox1.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneRoundedTextBox1.HoveredState.Parent = this.siticoneRoundedTextBox1;
-            this.siticoneRoundedTextBox1.Location = new System.Drawing.Point(13, 82);
-            this.siticoneRoundedTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.siticoneRoundedTextBox1.Name = "siticoneRoundedTextBox1";
-            this.siticoneRoundedTextBox1.PasswordChar = '\0';
-            this.siticoneRoundedTextBox1.PlaceholderText = "";
-            this.siticoneRoundedTextBox1.SelectedText = "";
-            this.siticoneRoundedTextBox1.ShadowDecoration.Parent = this.siticoneRoundedTextBox1;
-            this.siticoneRoundedTextBox1.Size = new System.Drawing.Size(377, 30);
-            this.siticoneRoundedTextBox1.TabIndex = 203;
+            this.txtRegisteCivile_SUB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRegisteCivile_SUB.Animated = false;
+            this.txtRegisteCivile_SUB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
+            this.txtRegisteCivile_SUB.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRegisteCivile_SUB.DefaultText = "";
+            this.txtRegisteCivile_SUB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtRegisteCivile_SUB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtRegisteCivile_SUB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRegisteCivile_SUB.DisabledState.Parent = this.txtRegisteCivile_SUB;
+            this.txtRegisteCivile_SUB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRegisteCivile_SUB.Enabled = false;
+            this.txtRegisteCivile_SUB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRegisteCivile_SUB.FocusedState.Parent = this.txtRegisteCivile_SUB;
+            this.txtRegisteCivile_SUB.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtRegisteCivile_SUB.ForeColor = System.Drawing.Color.Black;
+            this.txtRegisteCivile_SUB.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRegisteCivile_SUB.HoveredState.Parent = this.txtRegisteCivile_SUB;
+            this.txtRegisteCivile_SUB.Location = new System.Drawing.Point(13, 82);
+            this.txtRegisteCivile_SUB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtRegisteCivile_SUB.Name = "txtRegisteCivile_SUB";
+            this.txtRegisteCivile_SUB.PasswordChar = '\0';
+            this.txtRegisteCivile_SUB.PlaceholderText = "";
+            this.txtRegisteCivile_SUB.SelectedText = "";
+            this.txtRegisteCivile_SUB.ShadowDecoration.Parent = this.txtRegisteCivile_SUB;
+            this.txtRegisteCivile_SUB.Size = new System.Drawing.Size(377, 30);
+            this.txtRegisteCivile_SUB.TabIndex = 203;
+            this.txtRegisteCivile_SUB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtRegisteCivile_SUB_KeyDown);
             // 
             // label2
             // 
@@ -796,108 +840,68 @@
             // 
             // siticoneSeparator1
             // 
+            this.siticoneSeparator1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.siticoneSeparator1.Location = new System.Drawing.Point(3, 35);
             this.siticoneSeparator1.Name = "siticoneSeparator1";
             this.siticoneSeparator1.Size = new System.Drawing.Size(1002, 10);
             this.siticoneSeparator1.TabIndex = 198;
             // 
-            // txtDateNaissInscr
+            // txtDateInscrip_SUB
             // 
-            this.txtDateNaissInscr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDateNaissInscr.BackColor = System.Drawing.Color.Transparent;
-            this.txtDateNaissInscr.BaseColor = System.Drawing.Color.White;
-            this.txtDateNaissInscr.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
-            this.txtDateNaissInscr.BorderSize = 1;
-            this.txtDateNaissInscr.CustomFormat = null;
-            this.txtDateNaissInscr.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.txtDateNaissInscr.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtDateNaissInscr.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtDateNaissInscr.ForeColor = System.Drawing.Color.Black;
-            this.txtDateNaissInscr.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtDateNaissInscr.Location = new System.Drawing.Point(15, 116);
-            this.txtDateNaissInscr.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.txtDateNaissInscr.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.txtDateNaissInscr.Name = "txtDateNaissInscr";
-            this.txtDateNaissInscr.OnHoverBaseColor = System.Drawing.Color.White;
-            this.txtDateNaissInscr.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtDateNaissInscr.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtDateNaissInscr.OnPressedColor = System.Drawing.Color.Black;
-            this.txtDateNaissInscr.Radius = 5;
-            this.txtDateNaissInscr.Size = new System.Drawing.Size(375, 30);
-            this.txtDateNaissInscr.TabIndex = 2;
-            this.txtDateNaissInscr.Text = "2023/02/21";
-            this.txtDateNaissInscr.Value = new System.DateTime(2023, 2, 21, 22, 3, 13, 336);
+            this.txtDateInscrip_SUB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDateInscrip_SUB.BackColor = System.Drawing.Color.Transparent;
+            this.txtDateInscrip_SUB.BaseColor = System.Drawing.Color.White;
+            this.txtDateInscrip_SUB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
+            this.txtDateInscrip_SUB.BorderSize = 1;
+            this.txtDateInscrip_SUB.CustomFormat = null;
+            this.txtDateInscrip_SUB.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.txtDateInscrip_SUB.Enabled = false;
+            this.txtDateInscrip_SUB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtDateInscrip_SUB.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDateInscrip_SUB.ForeColor = System.Drawing.Color.Black;
+            this.txtDateInscrip_SUB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtDateInscrip_SUB.Location = new System.Drawing.Point(15, 116);
+            this.txtDateInscrip_SUB.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.txtDateInscrip_SUB.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.txtDateInscrip_SUB.Name = "txtDateInscrip_SUB";
+            this.txtDateInscrip_SUB.OnHoverBaseColor = System.Drawing.Color.White;
+            this.txtDateInscrip_SUB.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtDateInscrip_SUB.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtDateInscrip_SUB.OnPressedColor = System.Drawing.Color.Black;
+            this.txtDateInscrip_SUB.Radius = 5;
+            this.txtDateInscrip_SUB.Size = new System.Drawing.Size(375, 30);
+            this.txtDateInscrip_SUB.TabIndex = 2;
+            this.txtDateInscrip_SUB.Text = "2023/02/21";
+            this.txtDateInscrip_SUB.Value = new System.DateTime(2023, 2, 21, 22, 3, 13, 336);
             // 
-            // txtDateNaissProf
+            // txtDateNaiss_SUB
             // 
-            this.txtDateNaissProf.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDateNaissProf.BackColor = System.Drawing.Color.Transparent;
-            this.txtDateNaissProf.BaseColor = System.Drawing.Color.White;
-            this.txtDateNaissProf.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
-            this.txtDateNaissProf.BorderSize = 1;
-            this.txtDateNaissProf.CustomFormat = null;
-            this.txtDateNaissProf.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.txtDateNaissProf.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtDateNaissProf.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtDateNaissProf.ForeColor = System.Drawing.Color.Black;
-            this.txtDateNaissProf.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtDateNaissProf.Location = new System.Drawing.Point(782, 117);
-            this.txtDateNaissProf.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.txtDateNaissProf.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.txtDateNaissProf.Name = "txtDateNaissProf";
-            this.txtDateNaissProf.OnHoverBaseColor = System.Drawing.Color.White;
-            this.txtDateNaissProf.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtDateNaissProf.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtDateNaissProf.OnPressedColor = System.Drawing.Color.Black;
-            this.txtDateNaissProf.Radius = 5;
-            this.txtDateNaissProf.Size = new System.Drawing.Size(137, 30);
-            this.txtDateNaissProf.TabIndex = 1;
-            this.txtDateNaissProf.Text = "2023/02/21";
-            this.txtDateNaissProf.Value = new System.DateTime(2023, 2, 21, 22, 3, 13, 336);
-            // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("JF Flat", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(719, 122);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 24);
-            this.label7.TabIndex = 207;
-            this.label7.Text = "الجنس";
-            // 
-            // rjRadioButton1
-            // 
-            this.rjRadioButton1.AutoSize = true;
-            this.rjRadioButton1.CheckedColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjRadioButton1.Font = new System.Drawing.Font("JF Flat", 10F);
-            this.rjRadioButton1.Location = new System.Drawing.Point(553, 119);
-            this.rjRadioButton1.MinimumSize = new System.Drawing.Size(0, 21);
-            this.rjRadioButton1.Name = "rjRadioButton1";
-            this.rjRadioButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.rjRadioButton1.Size = new System.Drawing.Size(66, 28);
-            this.rjRadioButton1.TabIndex = 208;
-            this.rjRadioButton1.Text = "أنثى";
-            this.rjRadioButton1.UnCheckedColor = System.Drawing.Color.Gray;
-            this.rjRadioButton1.UseVisualStyleBackColor = true;
-            // 
-            // rjRadioButton2
-            // 
-            this.rjRadioButton2.AutoSize = true;
-            this.rjRadioButton2.Checked = true;
-            this.rjRadioButton2.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(199)))), ((int)(((byte)(120)))));
-            this.rjRadioButton2.Font = new System.Drawing.Font("JF Flat", 10F);
-            this.rjRadioButton2.Location = new System.Drawing.Point(627, 119);
-            this.rjRadioButton2.MinimumSize = new System.Drawing.Size(0, 21);
-            this.rjRadioButton2.Name = "rjRadioButton2";
-            this.rjRadioButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.rjRadioButton2.Size = new System.Drawing.Size(59, 28);
-            this.rjRadioButton2.TabIndex = 209;
-            this.rjRadioButton2.TabStop = true;
-            this.rjRadioButton2.Text = "ذكر";
-            this.rjRadioButton2.UnCheckedColor = System.Drawing.Color.Gray;
-            this.rjRadioButton2.UseVisualStyleBackColor = true;
+            this.txtDateNaiss_SUB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDateNaiss_SUB.BackColor = System.Drawing.Color.Transparent;
+            this.txtDateNaiss_SUB.BaseColor = System.Drawing.Color.White;
+            this.txtDateNaiss_SUB.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(192)))), ((int)(((byte)(239)))));
+            this.txtDateNaiss_SUB.BorderSize = 1;
+            this.txtDateNaiss_SUB.CustomFormat = null;
+            this.txtDateNaiss_SUB.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.txtDateNaiss_SUB.Enabled = false;
+            this.txtDateNaiss_SUB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtDateNaiss_SUB.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDateNaiss_SUB.ForeColor = System.Drawing.Color.Black;
+            this.txtDateNaiss_SUB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtDateNaiss_SUB.Location = new System.Drawing.Point(782, 117);
+            this.txtDateNaiss_SUB.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.txtDateNaiss_SUB.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.txtDateNaiss_SUB.Name = "txtDateNaiss_SUB";
+            this.txtDateNaiss_SUB.OnHoverBaseColor = System.Drawing.Color.White;
+            this.txtDateNaiss_SUB.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtDateNaiss_SUB.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtDateNaiss_SUB.OnPressedColor = System.Drawing.Color.Black;
+            this.txtDateNaiss_SUB.Radius = 5;
+            this.txtDateNaiss_SUB.Size = new System.Drawing.Size(137, 30);
+            this.txtDateNaiss_SUB.TabIndex = 1;
+            this.txtDateNaiss_SUB.Text = "2023/02/21";
+            this.txtDateNaiss_SUB.Value = new System.DateTime(2023, 2, 21, 22, 3, 13, 336);
             // 
             // FRM_SUBSCRIBER_ADD
             // 
@@ -906,8 +910,10 @@
             this.ClientSize = new System.Drawing.Size(1060, 530);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.Panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "FRM_SUBSCRIBER_ADD";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.RightToLeftLayout = true;
             this.Load += new System.EventHandler(this.FRM_EMP_ADD_Load);
             this.Panel1.ResumeLayout(false);
             this.Panel1.PerformLayout();
@@ -1063,17 +1069,17 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
         private System.Windows.Forms.DataGridViewImageColumn photoPROFDataGridViewImageColumn1;
-        private Siticone.UI.WinForms.SiticoneRoundedTextBox txtPrenomProf;
-        private Siticone.UI.WinForms.SiticoneRoundedTextBox txtIdProf;
-        private Siticone.UI.WinForms.SiticoneRoundedTextBox txtAdresseProf;
-        private Siticone.UI.WinForms.SiticoneRoundedTextBox txtLieuNaissProf;
+        private Siticone.UI.WinForms.SiticoneRoundedTextBox txtNom_SUB;
+        private Siticone.UI.WinForms.SiticoneRoundedTextBox txtID_SUB;
+        private Siticone.UI.WinForms.SiticoneRoundedTextBox txtAdresse_SUB;
+        private Siticone.UI.WinForms.SiticoneRoundedTextBox txtLieuNaiss_SUB;
         public System.Windows.Forms.PictureBox ImgAbonnee;
         private Siticone.UI.WinForms.SiticoneRoundedGradientButton BtnWebCam;
         private Siticone.UI.WinForms.SiticoneRoundedGradientButton BtnParcour;
         private Siticone.UI.WinForms.SiticoneRoundedGradientButton BtnCodeBarre;
         private System.Windows.Forms.PictureBox imgageQRCode;
-        private Siticone.UI.WinForms.SiticoneRoundedTextBox txtEmailProf;
-        private Siticone.UI.WinForms.SiticoneRoundedTextBox txtTel01Prof;
+        private Siticone.UI.WinForms.SiticoneRoundedTextBox txtEmail_SUB;
+        private Siticone.UI.WinForms.SiticoneRoundedTextBox txtPhone_SUB;
         private Siticone.UI.WinForms.SiticoneRoundedButton CmdClose;
         private Siticone.UI.WinForms.SiticoneRoundedButton CmdNew;
         private Siticone.UI.WinForms.SiticoneRoundedButton CmdSave;
@@ -1156,18 +1162,18 @@
         private System.Windows.Forms.BindingSource tBLEMPSBindingSource1;
         private Bunifu.Framework.UI.BunifuCards bunifuCards1;
         private Siticone.UI.WinForms.SiticoneSeparator siticoneSeparator1;
-        private Guna.UI.WinForms.GunaDateTimePicker txtDateNaissInscr;
-        private Guna.UI.WinForms.GunaDateTimePicker txtDateNaissProf;
+        private Guna.UI.WinForms.GunaDateTimePicker txtDateInscrip_SUB;
+        private Guna.UI.WinForms.GunaDateTimePicker txtDateNaiss_SUB;
         private Bunifu.Framework.UI.BunifuCards bunifuCards2;
         private Siticone.UI.WinForms.SiticoneSeparator siticoneSeparator2;
-        private Siticone.UI.WinForms.SiticoneRoundedTextBox siticoneRoundedTextBox5;
+        private Siticone.UI.WinForms.SiticoneRoundedTextBox txtNationalite_SUB;
         internal System.Windows.Forms.Label label8;
-        private Siticone.UI.WinForms.SiticoneRoundedTextBox siticoneRoundedTextBox2;
+        private Siticone.UI.WinForms.SiticoneRoundedTextBox txtIDCard_SUB;
         internal System.Windows.Forms.Label label3;
-        private Siticone.UI.WinForms.SiticoneRoundedTextBox siticoneRoundedTextBox1;
+        private Siticone.UI.WinForms.SiticoneRoundedTextBox txtRegisteCivile_SUB;
         internal System.Windows.Forms.Label label2;
-        private RJCodeAdvance.RJControls.RJRadioButton rjRadioButton2;
-        private RJCodeAdvance.RJControls.RJRadioButton rjRadioButton1;
+        private RJCodeAdvance.RJControls.RJRadioButton RB_SexeMale;
+        private RJCodeAdvance.RJControls.RJRadioButton RB_SexeFemale;
         internal System.Windows.Forms.Label label7;
         //private DataSet_HR dataSet_HR;
         //private DataSet_HRTableAdapters.TBL_EMPSTableAdapter tBL_EMPSTableAdapter1;

@@ -16,7 +16,7 @@ namespace FitnessValleyManager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FRM_MAINS());
+            Application.Run(new FRM_SUBSCRIBER_ADD());
         }
     }
 }

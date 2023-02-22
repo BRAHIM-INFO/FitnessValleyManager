@@ -12,20 +12,23 @@ using System.Globalization;
 using System.Drawing.Imaging;
 using System.Text.RegularExpressions;
 using System.Threading;
-using System.Data.SqlClient;
+using System.Data.SqlClient; 
 
 namespace FitnessValleyManager
 {
     public partial class FRM_SUBSCRIBER_ADD : Form
-    {
+    { 
         public static PictureBox Pic_PROF = new PictureBox();
         string PathImage = "";
         public static int NumIdProf = 0;
         public static int NumIdProfPoste = 0;
         bool OnModify = false;
-        string Sex = "أنثى";
+        string Sex = "ذكر";
         Siticone.UI.WinForms.SiticoneRoundedButton Btn_Default = new Siticone.UI.WinForms.SiticoneRoundedButton();
-        //Classes.CLS_USERS cls_users = new Classes.CLS_USERS();
+
+        ENTITIES.CLS_SUBSCRIBER CLS_SUBSCRIBER = new ENTITIES.CLS_SUBSCRIBER();
+        DAL.DAL_SUBSCRIBER DAL_SUBSCRIBER = new DAL.DAL_SUBSCRIBER();
+
         public FRM_SUBSCRIBER_ADD()
         {
             InitializeComponent();
@@ -38,40 +41,41 @@ namespace FitnessValleyManager
         //    frm.showAlert(msg, type);
         //}
 
+
+        
         public void EmptyData()
         {
-        //    txtIdProf.Text = string.Empty;
-        //    txtPrenomProf.Text = string.Empty;
-        //    txtLieuNaissProf.Text = string.Empty;
-        //    txtAdresseProf.Text = string.Empty;
-        //    txtDiplomeProf.Text = string.Empty;
-        //    txtEtaCivile.Text = string.Empty;
-        //    txtNoteProf.Text = string.Empty;
-        //    txtTel01Prof.Text = string.Empty;
-        //    txtTel02Prof.Text = string.Empty;
-        //    txtEmailProf.Text = string.Empty;
-        //    txtPosteProf.Text = string.Empty;
-        //    TxtSalaire.Text = string.Empty;
-        //    ImgAbonnee.Image = Properties.Resources.icons8_school_director_48;
-        //    //imgageFinger.Image = Properties.Resources.icons8_fingerprint_64;
-        //    imgageQRCode.Image = Properties.Resources.cf258720ded328c92d5a821c78b5a052;
+            txtID_SUB.Text = string.Empty;
+            txtNom_SUB.Text = string.Empty;
+            txtLieuNaiss_SUB.Text = string.Empty;
+            txtAdresse_SUB.Text = string.Empty; 
+            txtPhone_SUB.Text = string.Empty; 
+            txtEmail_SUB.Text = string.Empty;
+            txtDateInscrip_SUB.Value = DateTime.Now;
+            txtDateNaiss_SUB.Value = DateTime.Now;
+            txtRegisteCivile_SUB.Text = string.Empty;
+            txtIDCard_SUB.Text = string.Empty;
+            txtNationalite_SUB.Text = string.Empty;
+            
+            ImgAbonnee.Image = Properties.Resources.icons8_school_director_48; 
+            imgageQRCode.Image = Properties.Resources.cf258720ded328c92d5a821c78b5a052;
         }
 
         public void EnableAll(bool Values)
         {
-            txtDateNaissProf.Enabled = Values;
-            txtDateNaissInscr.Enabled = Values;
-            txtIdProf.Enabled = Values;
-            txtPrenomProf.Enabled = Values;
-            txtLieuNaissProf.Enabled = Values;
-            txtAdresseProf.Enabled = Values; 
-            txtTel01Prof.Enabled = Values;
-            txtTel02Prof.Enabled = Values;
-            txtEmailProf.Enabled = Values; 
-            BtnCodeBarre.Enabled = Values;
-            //BtnFinger.Enabled = Values;
-            BtnWebCam.Enabled = Values;
-            BtnParcour.Enabled = Values;
+            txtID_SUB.Enabled = Values;
+            txtNom_SUB.Enabled = Values;
+            txtLieuNaiss_SUB.Enabled = Values;
+            txtAdresse_SUB.Enabled = Values;
+            txtPhone_SUB.Enabled = Values;
+            txtEmail_SUB.Enabled = Values;
+            txtDateNaiss_SUB.Enabled = Values;
+            txtRegisteCivile_SUB.Enabled = Values;
+            txtIDCard_SUB.Enabled = Values;
+            txtNationalite_SUB.Enabled = Values;
+
+            ImgAbonnee.Enabled = Values;
+            imgageQRCode.Enabled = Values; 
         }
 
         SqlConnection con;
@@ -114,36 +118,34 @@ namespace FitnessValleyManager
             //this.Enabled = false;
             //// }
         }
-        private void CmdNew_Click(object sender, EventArgs e)
-        {
+
+        private async void CmdNew_Click(object sender, EventArgs e)
+        { 
             //int CountEMP = tBL_EMPSTableAdapter.GetData().Count;
             //if (CountEMP >= 5)
             //{
             //    var frm = new Forms.FRM_EVALUATION();
             //    frm.ShowDialog();
             //    this.Enabled = false;
-            //}
+            //} 
+
             EmptyData();
             EnableAll(true);
-            //if (tBL_EMPSTableAdapter1.ScalarQueryMAX() != null)
-            //{
-            //    txtIdProf.Text = ((int)tBL_EMPSTableAdapter1.ScalarQueryMAX() + 1).ToString();
-            //}
-            //else
-            //{
-            //    txtIdProf.Text = "1";
-            //}
+
+            //incrimenter ID Subscriber 
+            int NewID = await DAL_SUBSCRIBER.IncrementID();
+            txtID_SUB.Text = NewID.ToString();
+
             CmdNew.Enabled = false;
-            CmdSave.Enabled = true;
-            CmdDelete.Enabled = false;
-            CmdModify.Enabled = false;
+            CmdSave.Enabled = true; 
             BtnWebCam.Enabled = true;
             BtnParcour.Enabled = true;
             BtnCodeBarre.Enabled = true;
         }
 
-        private void CmdSave_Click(object sender, EventArgs e)
+        private async void CmdSave_Click(object sender, EventArgs e)
         {
+
             //int CountEMP = tBL_EMPSTableAdapter.GetData().Count;
             //if (CountEMP >= 5)
             //{
@@ -162,13 +164,7 @@ namespace FitnessValleyManager
             //imgageQRCode.Image = qrcode.Draw(txtIdProf.Text, 50);
 
 
-            ////تهيئة الملف لادراج الصور في  قاعدة البيانات
-            //imgageFinger.Image = Properties.Resources.icons8_fingerprint_64;
-            //MemoryStream msAbon = new MemoryStream();
-            //imgageFinger.Image.Save(msAbon, ImageFormat.Jpeg);
-            //byte[] byteimageFinger = msAbon.ToArray();
-
-
+            //تهيئة الملف لادراج الصور في  قاعدة البيانات
             //MemoryStream msAbon01 = new MemoryStream();
             //ImgAbonnee.Image.Save(msAbon01, ImageFormat.Jpeg);
             //byte[] byteimageAbon = msAbon01.ToArray();
@@ -176,24 +172,23 @@ namespace FitnessValleyManager
 
             //MemoryStream msAbon02 = new MemoryStream();
             //imgageQRCode.Image.Save(msAbon02, ImageFormat.Jpeg);
-            //byte[] byteimageCode = msAbon02.ToArray();
+            //byte[] byteimageQrCode = msAbon02.ToArray();
 
-            //if (OnModify == false)
-            //{
-            //    this.tBL_EMPSTableAdapter1.InsertQuery(txtPrenomProf.Text, txtDateNaissProf.Value,
-            //    txtLieuNaissProf.Text, txtAdresseProf.Text, Sex, txtDateNaissInscr.Value, txtDiplomeProf.Text, txtPosteProf.Text, TxtSalaire.Text,
-            //    txtEtaCivile.Text, txtTel01Prof.Text, txtTel02Prof.Text, txtEmailProf.Text, txtNoteProf.Text, byteimageAbon, byteimageCode, byteimageFinger);
+            if (OnModify == false)
+            {
+               int Resp = await  DAL_SUBSCRIBER.AddSubscriber( int.Parse(txtID_SUB.Text), txtRegisteCivile_SUB.Text, txtIDCard_SUB.Text, txtNom_SUB.Text, txtDateNaiss_SUB.Value.ToShortDateString(), txtLieuNaiss_SUB.Text,
+                    txtDateInscrip_SUB.Value.ToShortDateString(), Sex , txtPhone_SUB.Text,txtAdresse_SUB.Text,txtEmail_SUB.Text, txtNationalite_SUB.Text, (Bitmap)imgageQRCode.Image , (Bitmap)ImgAbonnee.Image); 
 
-            //    this.Alert("تم إنشاء موظف (ة) بنجاح", FRM_ALERT.enmType.Success);
+                if(Resp == 1) { MessageBox.Show("تم إنشاء مشترك (ة) بنجاح", ""); } 
+                
+                //MessageBox.Show("تم إنشاء موظف (ة) بنجاح", "");
+                //this.Alert("تم إنشاء موظف (ة) بنجاح", FRM_ALERT.enmType.Success);
 
-            //}
-            //else
-            //{
-            //    this.tBL_EMPSTableAdapter1.UpdateQuery(txtPrenomProf.Text, txtDateNaissProf.Value,
-            //  txtLieuNaissProf.Text, txtAdresseProf.Text, Sex, txtDateNaissInscr.Value, txtDiplomeProf.Text, txtPosteProf.Text, TxtSalaire.Text,
-            //  txtEtaCivile.Text, txtTel01Prof.Text, txtTel02Prof.Text, txtEmailProf.Text, txtNoteProf.Text, byteimageAbon, byteimageCode, byteimageFinger, int.Parse(txtIdProf.Text));
-            //    this.Alert("تم تعديل موظف (ة) بنجاح", FRM_ALERT.enmType.Success);
-            //}
+            }
+            else
+            { 
+                //this.Alert("تم تعديل موظف (ة) بنجاح", FRM_ALERT.enmType.Success);
+            }
 
 
             ////اعدادات الازرار 
@@ -231,14 +226,12 @@ namespace FitnessValleyManager
 
         private void CmdModify_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtIdProf.Text))
+            if (!string.IsNullOrEmpty(txtID_SUB.Text))
             {
                 OnModify = true;
                 EnableAll(true);
                 CmdNew.Enabled = false;
-                CmdSave.Enabled = true;
-                CmdDelete.Enabled = true;
-                CmdModify.Enabled = false;
+                CmdSave.Enabled = true; 
             }
         }
 
@@ -259,9 +252,7 @@ namespace FitnessValleyManager
         {
             OnModify = false;
             CmdSave.Enabled = false;
-            CmdNew.Enabled = true;
-            CmdDelete.Enabled = false;
-            CmdModify.Enabled = false;
+            CmdNew.Enabled = true; 
             EmptyData();
             EnableAll(false);
         }
@@ -333,8 +324,8 @@ namespace FitnessValleyManager
 
         private void BtnCodeBarre_Click(object sender, EventArgs e)
         {
-            Zen.Barcode.CodeQrBarcodeDraw qrcode = Zen.Barcode.BarcodeDrawFactory.CodeQr;
-            imgageQRCode.Image = qrcode.Draw(txtIdProf.Text, 50);
+            //Zen.Barcode.CodeQrBarcodeDraw qrcode = Zen.Barcode.BarcodeDrawFactory.CodeQr;
+            //imgageQRCode.Image = qrcode.Draw(txtID_SUB.Text, 50);
         }
 
         private void TxtSalaire_Leave(object sender, EventArgs e)
@@ -354,7 +345,7 @@ namespace FitnessValleyManager
         {
             if (e.KeyCode == Keys.Enter)
             {
-                SendKeys.Send("{TAB}");
+                SendKeys.Send("{ENTER}");
             }
         }
 
@@ -362,7 +353,7 @@ namespace FitnessValleyManager
         {
             if (e.KeyCode == Keys.Enter)
             {
-                SendKeys.Send("{TAB}");
+                SendKeys.Send("{ENTER}");
             }
         }
 
@@ -370,7 +361,7 @@ namespace FitnessValleyManager
         {
             if (e.KeyCode == Keys.Enter)
             {
-                SendKeys.Send("{TAB}");
+                SendKeys.Send("{ENTER}");
             }
         }
 
@@ -378,7 +369,7 @@ namespace FitnessValleyManager
         {
             if (e.KeyCode == Keys.Enter)
             {
-                SendKeys.Send("{TAB}");
+                SendKeys.Send("{ENTER}");
             }
         }
 
@@ -386,7 +377,7 @@ namespace FitnessValleyManager
         {
             if (e.KeyCode == Keys.Enter)
             {
-                SendKeys.Send("{TAB}");
+                SendKeys.Send("{ENTER}");
             }
         }
 
@@ -394,7 +385,7 @@ namespace FitnessValleyManager
         {
             if (e.KeyCode == Keys.Enter)
             {
-                SendKeys.Send("{TAB}");
+                SendKeys.Send("{ENTER}");
             }
         }
 
@@ -410,7 +401,7 @@ namespace FitnessValleyManager
         {
             if (e.KeyCode == Keys.Enter)
             {
-                SendKeys.Send("{TAB}");
+                SendKeys.Send("{ENTER}");
             }
         }
 
@@ -418,25 +409,48 @@ namespace FitnessValleyManager
         {
             if (e.KeyCode == Keys.Enter)
             {
-                SendKeys.Send("{TAB}");
+                SendKeys.Send("{ENTER}");
+            }
+        } 
+
+        private void txtRegisteCivile_SUB_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                SendKeys.Send("{ENTER}");
             }
         }
 
-        private void Txtsearch_TextChanged(object sender, EventArgs e)
+        private void txtIDCard_SUB_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.KeyCode == Keys.Enter)
+            {
+                SendKeys.Send("{ENTER}");
+            }
         }
 
-        private void DGListProfs_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void RB_SexeMale_CheckedChanged(object sender, EventArgs e)
         {
-
+            if(RB_SexeMale.Checked)
+            {
+                Sex = "ذكر";
+            }
+            else
+            {
+                Sex = "أنثى";
+            }
         }
 
-        private void DGListProfs_SelectionChanged(object sender, EventArgs e)
+        private void RB_SexeFemale_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (RB_SexeMale.Checked)
+            {
+                Sex = "أنثى";
+            }
+            else
+            {
+                Sex = "ذكر";
+            }
         }
-
-
     }
 }
